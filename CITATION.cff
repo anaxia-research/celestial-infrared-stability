@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Working research draft. Prospective authorship and manuscript approval require coauthor review."
+type: manuscript
+title: "Infrared Identifiability in Celestial Mellin Space"
+authors:
+  - family-names: Bhattacharjee
+    given-names: Deep
+    orcid: "https://orcid.org/0000-0003-0466-750X"
+  - family-names: Lockwood
+    given-names: James Montgomery
+  - family-names: Romanov
+    given-names: Tristan
+  - family-names: Sessford
+    given-names: Ikailo John
+    orcid: "https://orcid.org/0009-0002-0150-4027"
+  - family-names: Bhattacharya
+    given-names: Ushashi
+    orcid: "https://orcid.org/0009-0002-2254-3914"
+  - family-names: Singha Roy
+    given-names: Sanjeevan
+    orcid: "https://orcid.org/0000-0002-6148-1421"
+abstract: "Working research draft on Mellin residue stability, optimal soft-log recovery, and local-unit conventions."

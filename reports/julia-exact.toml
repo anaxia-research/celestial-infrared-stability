@@ -1,0 +1,154 @@
+arithmetic = "Rational{BigInt}; no numerical quadrature or external packages"
+chebyshev_recurrence_degree_max = 24
+chebyshev_recurrence_degree_min = 1
+formal_proof = false
+generated_utc = "2026-11-14T20:21:56.142"
+integer_beta_integral_count = 72
+julia_version = "1.10.9"
+passed = true
+schema = "celestial-julia-exact-v1"
+scope = "Independent finite exact beta and Chebyshev checks"
+unit_residue_reason = "Exact finite-product value; analytical limit pi*z/sin(pi*z)=1 is used."
+whole_line_reason = "Positivity and the Mellin integral triangle inequality; equality at zero frequency."
+
+[[integer_a_one_norms]]
+N = 2
+R = "3//2"
+exact_norm = "3//2"
+[[integer_a_one_norms]]
+N = 3
+R = "3//2"
+exact_norm = "3//4"
+[[integer_a_one_norms]]
+N = 4
+R = "3//2"
+exact_norm = "1//2"
+[[integer_a_one_norms]]
+N = 5
+R = "3//2"
+exact_norm = "3//8"
+[[integer_a_one_norms]]
+N = 6
+R = "3//2"
+exact_norm = "3//10"
+[[integer_a_one_norms]]
+N = 7
+R = "3//2"
+exact_norm = "1//4"
+[[integer_a_one_norms]]
+N = 8
+R = "3//2"
+exact_norm = "3//14"
+[[integer_a_one_norms]]
+N = 9
+R = "3//2"
+exact_norm = "3//16"
+[[integer_a_one_norms]]
+N = 10
+R = "3//2"
+exact_norm = "1//6"
+[[integer_a_one_norms]]
+N = 11
+R = "3//2"
+exact_norm = "3//20"
+[[integer_a_one_norms]]
+N = 12
+R = "3//2"
+exact_norm = "3//22"
+[[integer_a_one_norms]]
+N = 13
+R = "3//2"
+exact_norm = "1//8"
+[[integer_a_one_norms]]
+N = 14
+R = "3//2"
+exact_norm = "3//26"
+[[integer_a_one_norms]]
+N = 15
+R = "3//2"
+exact_norm = "3//28"
+[[integer_a_one_norms]]
+N = 16
+R = "3//2"
+exact_norm = "1//10"
+[[integer_a_one_norms]]
+N = 17
+R = "3//2"
+exact_norm = "3//32"
+[[integer_a_one_norms]]
+N = 18
+R = "3//2"
+exact_norm = "3//34"
+[[integer_a_one_norms]]
+N = 19
+R = "3//2"
+exact_norm = "1//12"
+[[integer_a_one_norms]]
+N = 20
+R = "3//2"
+exact_norm = "3//38"
+[[integer_a_one_norms]]
+N = 21
+R = "3//2"
+exact_norm = "3//40"
+[[integer_a_one_norms]]
+N = 22
+R = "3//2"
+exact_norm = "1//14"
+[[integer_a_one_norms]]
+N = 23
+R = "3//2"
+exact_norm = "3//44"
+[[integer_a_one_norms]]
+N = 24
+R = "3//2"
+exact_norm = "3//46"
+[[integer_a_one_norms]]
+N = 25
+R = "3//2"
+exact_norm = "1//16"
+[[integer_a_one_norms]]
+N = 26
+R = "3//2"
+exact_norm = "3//50"
+[[integer_a_one_norms]]
+N = 27
+R = "3//2"
+exact_norm = "3//52"
+[[integer_a_one_norms]]
+N = 28
+R = "3//2"
+exact_norm = "1//18"
+[[integer_a_one_norms]]
+N = 29
+R = "3//2"
+exact_norm = "3//56"
+[[integer_a_one_norms]]
+N = 30
+R = "3//2"
+exact_norm = "3//58"
+[[integer_a_one_norms]]
+N = 31
+R = "3//2"
+exact_norm = "1//20"
+[[integer_a_one_norms]]
+N = 32
+R = "3//2"
+exact_norm = "3//62"
+
+[negative_controls]
+equispaced_degree_four_ratio = "4//3"
+wrong_R_over_N_rejected = true
+
+[[rational_interpolation]]
+degree = 1
+moment_identities = 2
+sharp_noise_factor = "6//5"
+[[rational_interpolation]]
+degree = 2
+moment_identities = 3
+sharp_noise_factor = "72//25"
+[[rational_interpolation]]
+degree = 3
+moment_identities = 4
+sharp_noise_factor = "864//125"

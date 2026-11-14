@@ -1,0 +1,765 @@
+{
+  "schema": "celestial-recovery-checks-v1",
+  "generated_utc": "2026-11-14T20:21:50.630639+00:00",
+  "python_version": "3.14.3",
+  "sympy_version": "1.14.0",
+  "mpmath_version": "1.3.0",
+  "formal_proof": false,
+  "scope": "beta-family identities and fixed-degree Chebyshev recovery only",
+  "exact": {
+    "chebyshev_exact_leading_coefficients_degrees": [
+      1,
+      24
+    ],
+    "beta_integer_polynomial_integrals": [
+      {
+        "a": 1,
+        "N": 2,
+        "beta": "1"
+      },
+      {
+        "a": 1,
+        "N": 3,
+        "beta": "1/2"
+      },
+      {
+        "a": 1,
+        "N": 4,
+        "beta": "1/3"
+      },
+      {
+        "a": 1,
+        "N": 5,
+        "beta": "1/4"
+      },
+      {
+        "a": 1,
+        "N": 6,
+        "beta": "1/5"
+      },
+      {
+        "a": 1,
+        "N": 7,
+        "beta": "1/6"
+      },
+      {
+        "a": 1,
+        "N": 8,
+        "beta": "1/7"
+      },
+      {
+        "a": 1,
+        "N": 9,
+        "beta": "1/8"
+      },
+      {
+        "a": 1,
+        "N": 10,
+        "beta": "1/9"
+      },
+      {
+        "a": 1,
+        "N": 11,
+        "beta": "1/10"
+      },
+      {
+        "a": 1,
+        "N": 12,
+        "beta": "1/11"
+      },
+      {
+        "a": 1,
+        "N": 13,
+        "beta": "1/12"
+      },
+      {
+        "a": 2,
+        "N": 3,
+        "beta": "1/2"
+      },
+      {
+        "a": 2,
+        "N": 4,
+        "beta": "1/6"
+      },
+      {
+        "a": 2,
+        "N": 5,
+        "beta": "1/12"
+      },
+      {
+        "a": 2,
+        "N": 6,
+        "beta": "1/20"
+      },
+      {
+        "a": 2,
+        "N": 7,
+        "beta": "1/30"
+      },
+      {
+        "a": 2,
+        "N": 8,
+        "beta": "1/42"
+      },
+      {
+        "a": 2,
+        "N": 9,
+        "beta": "1/56"
+      },
+      {
+        "a": 2,
+        "N": 10,
+        "beta": "1/72"
+      },
+      {
+        "a": 2,
+        "N": 11,
+        "beta": "1/90"
+      },
+      {
+        "a": 2,
+        "N": 12,
+        "beta": "1/110"
+      },
+      {
+        "a": 2,
+        "N": 13,
+        "beta": "1/132"
+      },
+      {
+        "a": 2,
+        "N": 14,
+        "beta": "1/156"
+      },
+      {
+        "a": 3,
+        "N": 4,
+        "beta": "1/3"
+      },
+      {
+        "a": 3,
+        "N": 5,
+        "beta": "1/12"
+      },
+      {
+        "a": 3,
+        "N": 6,
+        "beta": "1/30"
+      },
+      {
+        "a": 3,
+        "N": 7,
+        "beta": "1/60"
+      },
+      {
+        "a": 3,
+        "N": 8,
+        "beta": "1/105"
+      },
+      {
+        "a": 3,
+        "N": 9,
+        "beta": "1/168"
+      },
+      {
+        "a": 3,
+        "N": 10,
+        "beta": "1/252"
+      },
+      {
+        "a": 3,
+        "N": 11,
+        "beta": "1/360"
+      },
+      {
+        "a": 3,
+        "N": 12,
+        "beta": "1/495"
+      },
+      {
+        "a": 3,
+        "N": 13,
+        "beta": "1/660"
+      },
+      {
+        "a": 3,
+        "N": 14,
+        "beta": "1/858"
+      },
+      {
+        "a": 3,
+        "N": 15,
+        "beta": "1/1092"
+      },
+      {
+        "a": 4,
+        "N": 5,
+        "beta": "1/4"
+      },
+      {
+        "a": 4,
+        "N": 6,
+        "beta": "1/20"
+      },
+      {
+        "a": 4,
+        "N": 7,
+        "beta": "1/60"
+      },
+      {
+        "a": 4,
+        "N": 8,
+        "beta": "1/140"
+      },
+      {
+        "a": 4,
+        "N": 9,
+        "beta": "1/280"
+      },
+      {
+        "a": 4,
+        "N": 10,
+        "beta": "1/504"
+      },
+      {
+        "a": 4,
+        "N": 11,
+        "beta": "1/840"
+      },
+      {
+        "a": 4,
+        "N": 12,
+        "beta": "1/1320"
+      },
+      {
+        "a": 4,
+        "N": 13,
+        "beta": "1/1980"
+      },
+      {
+        "a": 4,
+        "N": 14,
+        "beta": "1/2860"
+      },
+      {
+        "a": 4,
+        "N": 15,
+        "beta": "1/4004"
+      },
+      {
+        "a": 4,
+        "N": 16,
+        "beta": "1/5460"
+      },
+      {
+        "a": 5,
+        "N": 6,
+        "beta": "1/5"
+      },
+      {
+        "a": 5,
+        "N": 7,
+        "beta": "1/30"
+      },
+      {
+        "a": 5,
+        "N": 8,
+        "beta": "1/105"
+      },
+      {
+        "a": 5,
+        "N": 9,
+        "beta": "1/280"
+      },
+      {
+        "a": 5,
+        "N": 10,
+        "beta": "1/630"
+      },
+      {
+        "a": 5,
+        "N": 11,
+        "beta": "1/1260"
+      },
+      {
+        "a": 5,
+        "N": 12,
+        "beta": "1/2310"
+      },
+      {
+        "a": 5,
+        "N": 13,
+        "beta": "1/3960"
+      },
+      {
+        "a": 5,
+        "N": 14,
+        "beta": "1/6435"
+      },
+      {
+        "a": 5,
+        "N": 15,
+        "beta": "1/10010"
+      },
+      {
+        "a": 5,
+        "N": 16,
+        "beta": "1/15015"
+      },
+      {
+        "a": 5,
+        "N": 17,
+        "beta": "1/21840"
+      },
+      {
+        "a": 6,
+        "N": 7,
+        "beta": "1/6"
+      },
+      {
+        "a": 6,
+        "N": 8,
+        "beta": "1/42"
+      },
+      {
+        "a": 6,
+        "N": 9,
+        "beta": "1/168"
+      },
+      {
+        "a": 6,
+        "N": 10,
+        "beta": "1/504"
+      },
+      {
+        "a": 6,
+        "N": 11,
+        "beta": "1/1260"
+      },
+      {
+        "a": 6,
+        "N": 12,
+        "beta": "1/2772"
+      },
+      {
+        "a": 6,
+        "N": 13,
+        "beta": "1/5544"
+      },
+      {
+        "a": 6,
+        "N": 14,
+        "beta": "1/10296"
+      },
+      {
+        "a": 6,
+        "N": 15,
+        "beta": "1/18018"
+      },
+      {
+        "a": 6,
+        "N": 16,
+        "beta": "1/30030"
+      },
+      {
+        "a": 6,
+        "N": 17,
+        "beta": "1/48048"
+      },
+      {
+        "a": 6,
+        "N": 18,
+        "beta": "1/74256"
+      }
+    ],
+    "beta_unit_residues": [
+      {
+        "N": 2,
+        "residue": "1"
+      },
+      {
+        "N": 3,
+        "residue": "1"
+      },
+      {
+        "N": 5,
+        "residue": "1"
+      },
+      {
+        "N": 9,
+        "residue": "1"
+      }
+    ],
+    "whole_vertical_line_integer_a_1_constants": [
+      {
+        "N": 2,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/2"
+      },
+      {
+        "N": 3,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/4"
+      },
+      {
+        "N": 4,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "1/2"
+      },
+      {
+        "N": 5,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/8"
+      },
+      {
+        "N": 6,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/10"
+      },
+      {
+        "N": 7,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "1/4"
+      },
+      {
+        "N": 8,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/14"
+      },
+      {
+        "N": 9,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/16"
+      },
+      {
+        "N": 10,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "1/6"
+      },
+      {
+        "N": 11,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/20"
+      },
+      {
+        "N": 12,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/22"
+      },
+      {
+        "N": 13,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "1/8"
+      },
+      {
+        "N": 14,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/26"
+      },
+      {
+        "N": 15,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/28"
+      },
+      {
+        "N": 16,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "1/10"
+      },
+      {
+        "N": 17,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/32"
+      },
+      {
+        "N": 18,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/34"
+      },
+      {
+        "N": 19,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "1/12"
+      },
+      {
+        "N": 20,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/38"
+      },
+      {
+        "N": 21,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/40"
+      },
+      {
+        "N": 22,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "1/14"
+      },
+      {
+        "N": 23,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/44"
+      },
+      {
+        "N": 24,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/46"
+      },
+      {
+        "N": 25,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "1/16"
+      },
+      {
+        "N": 26,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/50"
+      },
+      {
+        "N": 27,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/52"
+      },
+      {
+        "N": 28,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "1/18"
+      },
+      {
+        "N": 29,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/56"
+      },
+      {
+        "N": 30,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/58"
+      },
+      {
+        "N": 31,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "1/20"
+      },
+      {
+        "N": 32,
+        "R": "3/2",
+        "exact_sup_norm_at_a_1": "3/62"
+      }
+    ],
+    "whole_line_argument": "For positive A_N, the Mellin integral triangle inequality bounds every imaginary frequency by its value at zero; zero frequency attains the bound. Exact beta integrals check that value, not a finite frequency grid.",
+    "algebraic_interpolation": [
+      {
+        "degree": 1,
+        "left": "3/7",
+        "width": "5/3",
+        "sharp_noise_factor": "6/5",
+        "moment_identities": 2
+      },
+      {
+        "degree": 2,
+        "left": "3/7",
+        "width": "5/3",
+        "sharp_noise_factor": "72/25",
+        "moment_identities": 3
+      },
+      {
+        "degree": 3,
+        "left": "3/7",
+        "width": "5/3",
+        "sharp_noise_factor": "864/125",
+        "moment_identities": 4
+      },
+      {
+        "degree": 4,
+        "left": "3/7",
+        "width": "5/3",
+        "sharp_noise_factor": "10368/625",
+        "moment_identities": 5
+      },
+      {
+        "degree": 5,
+        "left": "3/7",
+        "width": "5/3",
+        "sharp_noise_factor": "124416/3125",
+        "moment_identities": 6
+      },
+      {
+        "degree": 6,
+        "left": "3/7",
+        "width": "5/3",
+        "sharp_noise_factor": "1492992/15625",
+        "moment_identities": 7
+      }
+    ],
+    "negative_controls": {
+      "wrong_R_over_N_rejected_for_N": [
+        2,
+        32
+      ],
+      "equispaced_degree_4_noise_ratio": "4/3"
+    }
+  },
+  "numerical": {
+    "working_decimal_digits": 60,
+    "quadrature_absolute_tolerance": "1e-40",
+    "quadrature_spot_checks": [
+      {
+        "N": 3,
+        "real_part_above_pole": "1",
+        "imaginary_frequency": "0",
+        "absolute_error": "0.0"
+      },
+      {
+        "N": 3,
+        "real_part_above_pole": "1",
+        "imaginary_frequency": "0.75",
+        "absolute_error": "1.94469227433e-62"
+      },
+      {
+        "N": 5,
+        "real_part_above_pole": "1.5",
+        "imaginary_frequency": "3",
+        "absolute_error": "0.0"
+      },
+      {
+        "N": 7,
+        "real_part_above_pole": "1",
+        "imaginary_frequency": "5",
+        "absolute_error": "1.61442105822e-65"
+      },
+      {
+        "N": 12,
+        "real_part_above_pole": "2.25",
+        "imaginary_frequency": "8",
+        "absolute_error": "5.71326122819e-67"
+      }
+    ],
+    "frequency_spot_checks_not_a_whole_line_proof": [
+      {
+        "N": 2,
+        "sampled_frequencies": [
+          "0",
+          "0.5",
+          "2",
+          "5",
+          "10"
+        ],
+        "largest_sample_to_exact_norm_ratio": "1.0"
+      },
+      {
+        "N": 3,
+        "sampled_frequencies": [
+          "0",
+          "0.5",
+          "2",
+          "5",
+          "10"
+        ],
+        "largest_sample_to_exact_norm_ratio": "1.0"
+      },
+      {
+        "N": 7,
+        "sampled_frequencies": [
+          "0",
+          "0.5",
+          "2",
+          "5",
+          "10"
+        ],
+        "largest_sample_to_exact_norm_ratio": "1.0"
+      },
+      {
+        "N": 16,
+        "sampled_frequencies": [
+          "0",
+          "0.5",
+          "2",
+          "5",
+          "10"
+        ],
+        "largest_sample_to_exact_norm_ratio": "1.0"
+      },
+      {
+        "N": 32,
+        "sampled_frequencies": [
+          "0",
+          "0.5",
+          "2",
+          "5",
+          "10"
+        ],
+        "largest_sample_to_exact_norm_ratio": "1.0"
+      }
+    ],
+    "chebyshev_interpolation_numerical_degrees_1_to_12": [
+      {
+        "degree": 1,
+        "noise_factor_relative_error": "0.0",
+        "maximum_moment_absolute_error": "1.55575381947e-61"
+      },
+      {
+        "degree": 2,
+        "noise_factor_relative_error": "0.0",
+        "maximum_moment_absolute_error": "7.77876909733e-62"
+      },
+      {
+        "degree": 3,
+        "noise_factor_relative_error": "7.77876909733e-62",
+        "maximum_moment_absolute_error": "3.30597686636e-61"
+      },
+      {
+        "degree": 4,
+        "noise_factor_relative_error": "1.55575381947e-61",
+        "maximum_moment_absolute_error": "2.48920611114e-60"
+      },
+      {
+        "degree": 5,
+        "noise_factor_relative_error": "0.0",
+        "maximum_moment_absolute_error": "8.71222138901e-60"
+      },
+      {
+        "degree": 6,
+        "noise_factor_relative_error": "2.3336307292e-61",
+        "maximum_moment_absolute_error": "7.48317587163e-59"
+      },
+      {
+        "degree": 7,
+        "noise_factor_relative_error": "1.55575381947e-61",
+        "maximum_moment_absolute_error": "5.12854246587e-58"
+      },
+      {
+        "degree": 8,
+        "noise_factor_relative_error": "0.0",
+        "maximum_moment_absolute_error": "7.41861208812e-58"
+      },
+      {
+        "degree": 9,
+        "noise_factor_relative_error": "1.55575381947e-61",
+        "maximum_moment_absolute_error": "2.44041767137e-56"
+      },
+      {
+        "degree": 10,
+        "noise_factor_relative_error": "7.77876909733e-62",
+        "maximum_moment_absolute_error": "1.19716656586e-55"
+      },
+      {
+        "degree": 11,
+        "noise_factor_relative_error": "2.3336307292e-61",
+        "maximum_moment_absolute_error": "3.39813505537e-55"
+      },
+      {
+        "degree": 12,
+        "noise_factor_relative_error": "3.11150763893e-61",
+        "maximum_moment_absolute_error": "3.4522432981e-55"
+      }
+    ]
+  },
+  "passed": true,
+  "limits": [
+    "Finite computations support, but do not replace, the analytical proofs.",
+    "No physical S-matrix, crossing, unitarity or celestial duality is established.",
+    "The polynomial-log model is a fixed-degree assumption, not a resummation theorem."
+  ]
+}

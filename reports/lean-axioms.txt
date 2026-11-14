@@ -1,0 +1,6 @@
+'ScaleJets.shift_zero' depends on axioms: [propext]
+'ScaleJets.shift_group' depends on axioms: [propext, Quot.sound]
+'ScaleJets.shift_inverse' depends on axioms: [propext, Quot.sound]
+'ScaleJets.reference_compensator' depends on axioms: [propext, Quot.sound]
+'ScaleJets.residue_negative_control' does not depend on any axioms
+'ScaleJets.leading_coefficient_invariant' does not depend on any axioms
