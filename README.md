@@ -24,6 +24,8 @@ $$\operatorname{Res}_{s=p}\widetilde A_N(s)=c,\qquad
 
 The proof is explicit. The stripped profile is completely monotone, its nearest complex singularity stays at $-R$, and its derivative at zero grows like $N/R$. A uniform derivative or complex-norm bound would supply an additional restriction.
 
+For a constant subleading soft term, choose $p=0$, $a=1$. The data line is then the usual four-dimensional principal series. For a leading $\omega^{-1}$ term, the theorem concerns a displaced line to the right of its pole. The boundary contour through the leading pole requires a separate distributional analysis.
+
 ## What the package proves
 
 | Result | Assumptions | Certificate |
