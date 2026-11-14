@@ -23,6 +23,7 @@ jobs:
       - name: Check exact identities and high-precision recovery controls
         run: |
           python scripts/verify_recovery.py
+          python scripts/verify_direct_stability.py
           python scripts/verify_scale_jets.py
           julia --startup-file=no julia/verify_exact.jl
       - uses: leanprover/lean-action@v1

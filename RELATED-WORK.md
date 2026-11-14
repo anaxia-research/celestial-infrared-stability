@@ -16,3 +16,14 @@ The review found extensive prior work on instability of analytic continuation, M
 The profiles used in the counterexample form a specified mathematical class. Positivity of these scalar functions supplies a mathematical restriction. Unitarity, crossing symmetry, gauge constraints, and a complete celestial CFT are additional requirements for a physical scattering model.
 
 Author-name provenance is the six-person `CITATION.cff` on the `paper` branch of `creelie/4Y-M`, read during preparation. This supplies spellings, while approval of the new draft remains pending. [Citation record](https://github.com/creelie/4Y-M/blob/paper/CITATION.cff)
+
+## Additional primary sources in the stability revision
+
+| Source | What is established already; relationship to this revision |
+| --- | --- |
+| S. Pasterski and S.-H. Shao, *A Conformal Basis for Flat Space Amplitudes*, Phys. Rev. D 96 (2017) 065022. [Primary paper](https://arxiv.org/abs/1705.01027) | Principal-series completeness and the massless Mellin basis are prior work. A discontinuous extraction functional in a specified topology does not contradict completeness. |
+| L. Donnay, S. Pasterski, A. Puhm, *Asymptotic Symmetries and Celestial CFT*, JHEP 09 (2020) 176. [Primary paper](https://arxiv.org/abs/2005.08990) | Analytically continued primaries and conformally soft modes have principal-series contour representations. This is the relevant existing extraction setting; our boundary theorem addresses stability for a scalar family in specified negative Sobolev norms. |
+| Y. Pano, M. Borji, *Distributional Celestial Amplitudes*, arXiv:2401.08877 (2024). [Primary paper](https://arxiv.org/abs/2401.08877) | Distributional Mellin transforms are an established subject. Our use of log-energy tempered distributions does not introduce distributional celestial amplitudes. |
+| H. J. Brown, Y. Grabovsky, *On feasibility of extrapolation of completely monotone functions*, arXiv:2401.15178v2 (2024). [Primary paper](https://arxiv.org/abs/2401.15178v2) | Close prior art: impossibility of left extrapolation despite complete monotonicity and power-law right extrapolation. Their observation interval and norms differ from the Mellin-line operator used here. Positivity alone is not a new instability principle. |
+
+The new direct-data result combines a classical Gaussian smoothing identity with a standard bias/noise balance and an explicit two-profile lower bound. The candidate contribution is the precise residue-recovery observation model and its connection to the celestial problem; no claim of discovering regularization, minimax methods, or the general instability of analytic continuation is made. Priority of the exact combined theorems remains unresolved.

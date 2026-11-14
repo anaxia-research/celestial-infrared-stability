@@ -1,0 +1,209 @@
+{
+  "schema": "direct-mellin-stability-controls-v1",
+  "generated_utc": "2026-11-14T22:43:27.744484+00:00",
+  "working_decimal_digits": 45,
+  "formal_proof": false,
+  "boundary_norm_quadrature": [
+    {
+      "N": 2,
+      "q": "0.75",
+      "norm_squared": "10.0833981838316466",
+      "ratio_to_asymptotic_diagnostic": "0.668051254552012716"
+    },
+    {
+      "N": 16,
+      "q": "0.75",
+      "norm_squared": "6.40987228304422852",
+      "ratio_to_asymptotic_diagnostic": "0.84934129192122868"
+    },
+    {
+      "N": 256,
+      "q": "0.75",
+      "norm_squared": "4.85498511310522864",
+      "ratio_to_asymptotic_diagnostic": "0.909778695338125215"
+    },
+    {
+      "N": 65536,
+      "q": "0.75",
+      "norm_squared": "3.58411497823212299",
+      "ratio_to_asymptotic_diagnostic": "0.949827613276610121"
+    },
+    {
+      "N": 2,
+      "q": "1.0",
+      "norm_squared": "4.2874398920249807",
+      "ratio_to_asymptotic_diagnostic": "0.472980936847675681"
+    },
+    {
+      "N": 16,
+      "q": "1.0",
+      "norm_squared": "1.66538988422106559",
+      "ratio_to_asymptotic_diagnostic": "0.734888593186539518"
+    },
+    {
+      "N": 256,
+      "q": "1.0",
+      "norm_squared": "0.94407266777856174",
+      "ratio_to_asymptotic_diagnostic": "0.833184158572151335"
+    },
+    {
+      "N": 65536,
+      "q": "1.0",
+      "norm_squared": "0.512218329147046865",
+      "ratio_to_asymptotic_diagnostic": "0.90410878768437694"
+    },
+    {
+      "N": 2,
+      "q": "1.5",
+      "norm_squared": "1.77453604928085834",
+      "ratio_to_asymptotic_diagnostic": "0.271385022564676004"
+    },
+    {
+      "N": 16,
+      "q": "1.5",
+      "norm_squared": "0.237904917904763212",
+      "ratio_to_asymptotic_diagnostic": "0.582135992469661659"
+    },
+    {
+      "N": 256,
+      "q": "1.5",
+      "norm_squared": "0.0728117504209924845",
+      "ratio_to_asymptotic_diagnostic": "0.712660183203873606"
+    },
+    {
+      "N": 65536,
+      "q": "1.5",
+      "norm_squared": "0.0210582765952755348",
+      "ratio_to_asymptotic_diagnostic": "0.824449085186123896"
+    }
+  ],
+  "fixed_detector_spot_checks": [
+    {
+      "N": 2,
+      "gaussian_pairing": "1.84335484753808275"
+    },
+    {
+      "N": 8,
+      "gaussian_pairing": "0.276299669947454811"
+    },
+    {
+      "N": 32,
+      "gaussian_pairing": "0.0122855362834890742"
+    },
+    {
+      "N": 128,
+      "gaussian_pairing": "0.000146428729741400418"
+    }
+  ],
+  "two_point_lower_bounds": [
+    {
+      "a": "0.5",
+      "alpha": "0.5",
+      "residue_separation": "0.0130384048104052974",
+      "line_norm": "0.0002",
+      "minimax_lower_bound": "0.00651920240520264871"
+    },
+    {
+      "a": "0.5",
+      "alpha": "1.0",
+      "residue_separation": "0.00278688905529383493",
+      "line_norm": "0.0002",
+      "minimax_lower_bound": "0.00139344452764691746"
+    },
+    {
+      "a": "0.5",
+      "alpha": "2.0",
+      "residue_separation": "0.000758984518332120646",
+      "line_norm": "0.0002",
+      "minimax_lower_bound": "0.000379492259166060323"
+    },
+    {
+      "a": "1.0",
+      "alpha": "0.5",
+      "residue_separation": "0.06611489018457945",
+      "line_norm": "0.0002",
+      "minimax_lower_bound": "0.033057445092289725"
+    },
+    {
+      "a": "1.0",
+      "alpha": "1.0",
+      "residue_separation": "0.0184390889145857746",
+      "line_norm": "0.0002",
+      "minimax_lower_bound": "0.00921954445729288731"
+    },
+    {
+      "a": "1.0",
+      "alpha": "2.0",
+      "residue_separation": "0.0044239106180920952",
+      "line_norm": "0.0002",
+      "minimax_lower_bound": "0.0022119553090460476"
+    },
+    {
+      "a": "2.0",
+      "alpha": "0.5",
+      "residue_separation": "0.169328042203257926",
+      "line_norm": "0.0002",
+      "minimax_lower_bound": "0.084664021101628963"
+    },
+    {
+      "a": "2.0",
+      "alpha": "1.0",
+      "residue_separation": "0.0832995418550395853",
+      "line_norm": "0.0002",
+      "minimax_lower_bound": "0.0416497709275197927"
+    },
+    {
+      "a": "2.0",
+      "alpha": "2.0",
+      "residue_separation": "0.0260768096208105949",
+      "line_norm": "0.0002",
+      "minimax_lower_bound": "0.0130384048104052974"
+    }
+  ],
+  "gaussian_and_band_controls": [
+    {
+      "h": "0.05",
+      "identity_absolute_error": "9.984251558314322e-45",
+      "noise_gain": "13.1548924695891383",
+      "bias": "0.0698054952527517962",
+      "bandwidth": "3.0",
+      "band_error": "0.000896749452346421611",
+      "band_error_upper_bound": "0.0659574071037288862"
+    },
+    {
+      "h": "0.2",
+      "identity_absolute_error": "1.0159413866354924e-44",
+      "noise_gain": "3.28872311739728457",
+      "bias": "0.235301070834713586",
+      "bandwidth": "3.0",
+      "band_error": "0.00011063917586811319",
+      "band_error_upper_bound": "0.0164893517759322215"
+    }
+  ],
+  "bias_noise_balance": [
+    {
+      "a": "1.0",
+      "alpha": "1.0",
+      "h_star": "0.0048442948882980026",
+      "upper_bound": "0.0271554328811947819"
+    },
+    {
+      "a": "2.0",
+      "alpha": "1.0",
+      "h_star": "0.0594717823447457591",
+      "upper_bound": "0.25003360102348822"
+    },
+    {
+      "a": "0.5",
+      "alpha": "0.5",
+      "h_star": "0.0000234671929647901575",
+      "upper_bound": "0.0186636378801730139"
+    }
+  ],
+  "passed": true,
+  "limits": [
+    "Numerical controls do not prove the infinite analytic statements.",
+    "Continuum frequency data; discrete sampling error is not bounded.",
+    "No physical scattering realization or full celestial duality is established."
+  ]
+}

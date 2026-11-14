@@ -18,4 +18,4 @@ authors:
   - family-names: Singha Roy
     given-names: Sanjeevan
     orcid: "https://orcid.org/0000-0002-6148-1421"
-abstract: "Working research draft on Mellin residue stability, optimal soft-log recovery, and local-unit conventions."
+abstract: "Working research draft on leading-soft boundary instability, direct Mellin-data recovery with a matching minimax exponent, optimal soft-log recovery, and local-unit conventions."

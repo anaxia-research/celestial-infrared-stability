@@ -1,12 +1,12 @@
 # Celestial Infrared Stability
 
-**Exact limits and optimal recovery of soft data in celestial Mellin space.**
+**When do approximate celestial data determine an infrared soft coefficient?**
 
 Deep Bhattacharjee · James Montgomery Lockwood · Tristan Romanov · Ikailo John Sessford · Ushashi Bhattacharya · Sanjeevan Singha Roy
 
 Working research draft with one unranked prospective author list supplied by the project lead. Coauthor review and approval remain pending.
 
-[Read the paper](paper/manuscript.pdf) · [Reproduce the calculations](#reproduce) · [Sources and originality review](RELATED-WORK.md)
+[Read the paper](paper/manuscript.pdf) · [Reproduce the calculations](#reproduce) · [Sources and originality review](RELATED-WORK.md) · [Proof status and open targets](PROOF-STATUS.md)
 
 ## The central result
 
@@ -22,24 +22,36 @@ $$\operatorname{Res}_{s=p}\widetilde A_N(s)=c,\qquad
 \sup_{\nu\in\mathbb R}|\widetilde A_N(p+a+i\nu)|
 =cR^a B(a,N-a)\longrightarrow0.$$
 
-The proof is explicit. The stripped profile is completely monotone, its nearest complex singularity stays at $-R$, and its derivative at zero grows like $N/R$. A uniform derivative or complex-norm bound would supply an additional restriction.
+The revised paper adds two complementary results:
 
-For a constant subleading soft term, choose $p=0$, $a=1$. The data line is then the usual four-dimensional principal series. For a leading $\omega^{-1}$ term, the theorem concerns a displaced line to the right of its pole. The boundary contour through the leading pole requires a separate distributional analysis.
+- **Leading-soft boundary instability.** On the contour through the pole, Abel boundary distributions tend to zero in `H^(-q)` for every `q > 1/2`, with an exact integral norm and a logarithmic decay law, while the residue stays fixed.
+- **Direct recovery from noisy Mellin data.** Under an explicit global endpoint modulus of order `alpha`, a Gaussian estimator and a two-profile lower bound give the matching minimax exponent `alpha/(a+alpha)` on a displaced line. For `a = alpha = 1`, the error is of order `sqrt(M eta)`. A finite frequency-band bound states its additional tail prior.
+
+These statements use different, explicitly specified data norms. Matching exponents do not imply matching optimal constants. Full written proofs appear in the paper; computational controls are reproducible below.
+
+The original beta-family proof is explicit. The stripped profile is completely monotone, its nearest complex singularity stays at $-R$, and its derivative at zero grows like $N/R$. A uniform derivative or complex-norm bound would supply an additional restriction.
+
+For a constant subleading soft term, choose $p=0$, $a=1$. The data line is then the usual four-dimensional principal series. For a leading $\omega^{-1}$ term, the theorem concerns a displaced line to the right of its pole. The new boundary theorem treats the leading pole separately in a negative Sobolev norm. It does not assign an ordinary uniform function norm to a contour containing a pole.
 
 ## What the package proves
 
 | Result | Assumptions | Certificate |
 | --- | --- | --- |
 | Discontinuous soft-residue extraction | The stated scalar Mellin-kernel family, with a fixed vertical line strictly inside the convergence strip | Beta-integral formula and exact norm |
+| Leading-soft boundary instability | Abel boundary distributions; frequency-variable `H^(-q)` with `q > 1/2` | Exact Fourier norm and logarithmic asymptotic |
+| Optimal exponent for direct residue recovery | Displaced-line bounded noise; explicit endpoint modulus and weighted integrability | Gaussian estimator and a matching two-point lower exponent |
+| Finite frequency-band error bound | Continuum-band data plus a known weighted integral bound | Explicit complementary-error-function tail |
 | Sharp recovery of the highest fixed-order soft-log coefficient | Energy-space observations of the stripped kernel, degree $m$ in logarithmic energy, width $T$, bounded deterministic noise $\delta$ | Optimal error $\delta\,m!\,2^{2m-1}/T^m$ for the highest Mellin pole coefficient |
 | Covariance of higher-pole coefficients | An energy-independent local unit change and meromorphic Mellin continuation | Exact triangular transformation law |
 | Reference-scale cancellation | The reference energy transforms with the chosen energy unit | The extra Mellin-weight factor cancels in the dimensionless convention |
 
-![Exact Mellin-line norm and fixed residue](assets/residue-instability.png)
+![Instability and conditional recovery](assets/stability-tradeoff.png)
+
+[Original fixed-radius counterexample figure](assets/residue-instability.png)
 
 ## Research scope
 
-The paper contains complete mathematical arguments for the stated classes. The beta integral, Chebyshev extremality, Mellin soft-pole dictionary, and logarithmic multiplets have established antecedents. Originality of the combined formulation remains under review.
+The paper contains complete mathematical arguments for the stated classes. The beta integral, Gaussian regularization, two-point minimax method, Chebyshev extremality, Mellin soft-pole dictionary, and logarithmic multiplets have established antecedents. Completely monotone extrapolation also has close prior work, now cited. Originality of the combined formulation remains under review.
 
 Recovery of a polynomial coefficient from a measured window needs the finite-degree model on that window. Identifying it with an actual infrared pole coefficient additionally requires the stated asymptotic tail bound. A remainder can vanish on the measured interval and grow farther into the infrared, changing the pole.
 
@@ -54,9 +66,11 @@ Use Python 3.11+ and Julia 1.10+.
 ```sh
 python -m pip install -r requirements.txt
 python scripts/verify_recovery.py
+python scripts/verify_direct_stability.py
 python scripts/verify_scale_jets.py
 julia --startup-file=no julia/verify_exact.jl
 python scripts/make_figure.py
+python scripts/make_stability_figure.py
 lean lean/ScaleJets.lean
 ```
 
@@ -69,7 +83,7 @@ pdflatex -interaction=nonstopmode -halt-on-error -output-directory=paper paper/m
 
 The written proofs establish the infinite statements. The scripts replay exact finite identities and high-precision controls, with their scope recorded in `reports/`.
 
-Lean 4.34.1 checks the symbolic integer double-pole group law, inverse, reference-scale cancellation, and an explicit counterexample to ordinary residue invariance. Its module imports `Std`. The analytical Mellin and minimax results are proved in the manuscript.
+Lean 4.34.1 checks the symbolic integer double-pole group law, inverse, reference-scale cancellation, and an explicit counterexample to ordinary residue invariance. Its module imports `Std`. The analytical Mellin, distributional boundary, and minimax results have written proofs in the manuscript and are not Lean formalizations.
 
 ## Authors and review
 
