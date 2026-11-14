@@ -6,3 +6,4 @@ paper/*.out
 paper/build-console.txt
 tmp/
 .venv/
+.lake/
