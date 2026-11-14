@@ -10,10 +10,14 @@ Updated 15 November 2026. This record distinguishes mathematical proofs from com
 | Instability on the leading-soft boundary contour | Abel boundary distributions; the standard frequency-variable norm `H^(-q)`, `q > 1/2` | Fourier representation, exact weighted norm, dominated convergence, and a two-tail asymptotic argument; numerical quadrature controls |
 | Direct soft-residue recovery with optimal exponent | Complete displaced-line data with bounded deterministic noise; global endpoint modulus `|f(x)-f(0)| <= M x^alpha`; weighted integrability | Explicit Gaussian estimator, rigorous bias/noise bound, and matching two-profile minimax lower exponent; high-precision identity and negative controls |
 | Finite frequency-band recovery bound | Continuum-band observations and an additional known bound on the weighted energy integral | Gaussian tail bound; numerical truncation controls. No discrete sampling guarantee |
+| Angularly smeared coefficient recovery | Banach-valued stripped kernels, global endpoint prior, bounded dual test, and Mellin-line noise | Bochner Gaussian identity and duality; exact spherical-mode and numerical controls |
+| Direct highest soft-log pole recovery | Fixed log degree and global remainder bound; arbitrary lower polynomial coefficients | Finite differences cancel lower degrees; explicit cutoff profiles give the matching minimax exponent. Constants depend on degree |
+| Full principal-part recovery | Same fixed-degree Banach class, unconstrained lower polynomial coefficients, fixed convention | Exact interpolation/inverse-Gaussian weights and matching marginal minimax rates, including logarithmic losses for lower poles; independent Python and rational Julia finite-identity replays |
+| Shifted-pole and branch-point model transforms | The two explicit scalar kernels in the paper | Complete integral derivations and numerical checks. They illustrate failure of the finite-polynomial resummation inference |
 | Sharp highest soft-log coefficient recovery | Energy-space observations; a fixed-degree polynomial on the measured interval | Chebyshev alternation and an indistinguishable pair; exact algebraic controls. Pole interpretation also needs the stated infrared tail condition |
 | Numerical-energy pole-jet transformation and reference cancellation | Energy-independent local changes of units; stated integration and continuation assumptions | Written analytical derivation, exact symbolic controls, and limited integer double-pole Lean formalization |
 
-The new analytical theorems are **not formalized in Lean**. The existing `lean/ScaleJets.lean` proves only the documented symbolic double-pole identities. A successful computation is not a substitute for the written infinite-dimensional proof.
+The new analytical theorems, including the angular and logarithmic extensions, are **not formalized in Lean**. The existing `lean/ScaleJets.lean` proves only the documented symbolic double-pole identities. A successful computation is not a substitute for the written infinite-dimensional proof.
 
 ## What changed in this revision
 
@@ -25,13 +29,20 @@ At displaced-line distance `a` and endpoint exponent `alpha`, the direct-data mi
 
 The error exponent matches. The upper and lower constants do not match, and no exact minimax-constant claim is made.
 
+## Progress on the two selected targets
+
+1. **Stable recovery of angular soft data:** proved for bounded angular pairings in the specified Banach-space observation model. A normalized physical soft-charge interpretation is conditional on an independently established charge map and a controlled hard contribution.
+2. **Loop corrections and logarithmic modes:** proved a direct-data recovery theorem and matching minimax exponent for every fixed log degree under the global remainder prior. The entire principal part is also recoverable with matching componentwise logarithmic losses for lower poles. Existing loop operators and Ward identities are credited to the primary sources. Two explicit resummation models prove why finite polynomial truncations cannot certify all-orders singularity structure.
+
+The new estimates do not close all problems of celestial holography, Sabrina Pasterski, or her coauthors. The [bounded source-based problem map](OPEN-PROBLEMS.md) identifies what has and has not been addressed.
+
 ## Open targets with concrete completion criteria
 
 | Target | What a proof would have to supply | Current status |
 | --- | --- | --- |
 | A physical scattering realization | A family satisfying the relevant unitarity, crossing, gauge, and kinematic constraints, plus the required Mellin bounds | Open. Scalar positivity and complete monotonicity do not establish these conditions |
-| Bounds for observable soft charges | Specify the angular/kinematic smearing and the physical measurement norm, then prove its relation to this paper's norms | Open. The residue is a scalar model of soft data |
-| Loop-resummed data | Replace a finite-order pole ansatz by the actual branch-cut/spectral structure and establish remainder bounds | Open. Finite soft-log proofs do not establish resummation |
+| Bounds for physical soft charges | Identify the normalized charge map and hard contribution in a physical theory; verify its angular and Mellin priors | Conditional mathematical transfer now proved. A physical charge identification and physical noise model remain open |
+| Loop-resummed data | Recover the actual branch-cut/spectral structure with a justified QFT remainder and renormalization prescription | Open. Fixed-degree recovery and two explicit resummation controls are proved; a general all-orders theorem is not |
 | Certified discrete recovery | A sampling scheme with a rigorously bounded quadrature and truncation error in addition to the continuum-band bound | Open. Numerical examples do not supply a uniform sampling theorem |
 | Full formalization | Mellin/Fourier integration, distribution boundary values, the Sobolev limit, and the minimax inequalities in a proof assistant | Open. Existing Lean scope is deliberately much smaller |
 | Originality and publication readiness | Systematic comparison with the nearest theorems, specialist review, and approval by every listed author | Pending. No priority or breakthrough certification |

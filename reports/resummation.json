@@ -1,0 +1,671 @@
+{
+  "schema": "celestial-resummation-controls-v1",
+  "generated_utc": "2026-11-14T23:30:00.437242+00:00",
+  "formal_proof": false,
+  "passed": true,
+  "status": "passed",
+  "scope": "Finite numerical verification of two scalar established-model illustrations; no physical loop amplitude, all-orders soft algebra, or Ward identity is claimed.",
+  "precision_decimal_digits": 70,
+  "integral_scaled_absolute_tolerance": "1.0e-45",
+  "parameters": {
+    "lambda": "0.7"
+  },
+  "shifted_pole": {
+    "exact_formula": "1/(z+lambda)",
+    "pole_location": "-0.7",
+    "integral_checks": [
+      {
+        "z": {
+          "real": "0.7",
+          "imag": "0.4"
+        },
+        "quadrature": {
+          "real": "0.6603773584905660377358490566",
+          "imag": "-0.1886792452830188679245283019"
+        },
+        "closed_form": {
+          "real": "0.6603773584905660377358490566",
+          "imag": "-0.1886792452830188679245283019"
+        },
+        "scaled_absolute_error": "0.0",
+        "passed": true
+      },
+      {
+        "z": {
+          "real": "1.5",
+          "imag": "-0.3"
+        },
+        "quadrature": {
+          "real": "0.4462474645030425963488843813",
+          "imag": "0.06085192697768762677484787018"
+        },
+        "closed_form": {
+          "real": "0.4462474645030425963488843813",
+          "imag": "0.06085192697768762677484787018"
+        },
+        "scaled_absolute_error": "4.563076176210983398452821736e-72",
+        "passed": true
+      },
+      {
+        "z": {
+          "real": "0.2",
+          "imag": "0.1"
+        },
+        "quadrature": {
+          "real": "1.09756097560975609756097561",
+          "imag": "-0.1219512195121951219512195122"
+        },
+        "closed_form": {
+          "real": "1.09756097560975609756097561",
+          "imag": "-0.1219512195121951219512195122"
+        },
+        "scaled_absolute_error": "1.02503327182686678150612813e-72",
+        "passed": true
+      }
+    ],
+    "finite_taylor_truncations": [
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "1.095890410958904109589041096",
+          "imag": "-0.410958904109589041095890411"
+        },
+        "closed_form": {
+          "real": "1.095890410958904109589041096",
+          "imag": "-0.410958904109589041095890411"
+        },
+        "scaled_absolute_error": "0.0",
+        "passed": true,
+        "degree": 0,
+        "pole_order_at_zero": 1,
+        "top_laurent_coefficient": "1.0",
+        "scaled_near_zero_value": "1.0"
+      },
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "0.3734284105835991743291424282",
+          "imag": "0.219553387127040720585475699"
+        },
+        "closed_form": {
+          "real": "0.3734284105835991743291424282",
+          "imag": "0.219553387127040720585475699"
+        },
+        "scaled_absolute_error": "4.527839539413356183754559645e-72",
+        "passed": true,
+        "degree": 1,
+        "pole_order_at_zero": 2,
+        "top_laurent_coefficient": "-0.7",
+        "scaled_near_zero_value": "-0.699999999999999999"
+      },
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "0.7462655873650765904831922512",
+          "imag": "-0.4719588089980643519434883308"
+        },
+        "closed_form": {
+          "real": "0.7462655873650765904831922512",
+          "imag": "-0.4719588089980643519434883308"
+        },
+        "scaled_absolute_error": "4.527839539413356183754559645e-72",
+        "passed": true,
+        "degree": 2,
+        "pole_order_at_zero": 3,
+        "top_laurent_coefficient": "0.49",
+        "scaled_near_zero_value": "0.4899999999999999993"
+      },
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "0.6591816725550008537500614915",
+          "imag": "0.1657708306651809877942792302"
+        },
+        "closed_form": {
+          "real": "0.6591816725550008537500614915",
+          "imag": "0.1657708306651809877942792302"
+        },
+        "scaled_absolute_error": "4.527839539413356183754559645e-72",
+        "passed": true,
+        "degree": 3,
+        "pole_order_at_zero": 4,
+        "top_laurent_coefficient": "-0.343",
+        "scaled_near_zero_value": "-0.34299999999999999951"
+      },
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "0.5425292999034404307714615431",
+          "imag": "-0.3484979642958235258592924051"
+        },
+        "closed_form": {
+          "real": "0.5425292999034404307714615431",
+          "imag": "-0.3484979642958235258592924051"
+        },
+        "scaled_absolute_error": "9.055679078826712367509119291e-72",
+        "passed": true,
+        "degree": 4,
+        "pole_order_at_zero": 5,
+        "top_laurent_coefficient": "0.2401",
+        "scaled_near_zero_value": "0.240099999999999999657"
+      },
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "0.7799563898030086290389492342",
+          "imag": "0.01245207258271734923727489161"
+        },
+        "closed_form": {
+          "real": "0.7799563898030086290389492342",
+          "imag": "0.01245207258271734923727489161"
+        },
+        "scaled_absolute_error": "1.103660887732005569790173914e-71",
+        "passed": true,
+        "degree": 5,
+        "pole_order_at_zero": 6,
+        "top_laurent_coefficient": "-0.16807",
+        "scaled_near_zero_value": "-0.1680699999999999997599"
+      }
+    ]
+  },
+  "branch_model": {
+    "exact_formula": "lambda^(-gamma)*z^(gamma-1)*exp(z/lambda)*Gamma(1-gamma,z/lambda)",
+    "domain_of_integral": "Re(z)>0, lambda>0, 0<gamma<1",
+    "continuation": "principal branches; fractional branch point at z=0",
+    "integral_checks": [
+      {
+        "z": {
+          "real": "0.7",
+          "imag": "0.4"
+        },
+        "quadrature": {
+          "real": "0.9746817730260915034336569167",
+          "imag": "-0.4987395388293241949574618478"
+        },
+        "closed_form": {
+          "real": "0.9746817730260915034336569167",
+          "imag": "-0.4987395388293241949574618478"
+        },
+        "scaled_absolute_error": "4.135494989329523604407710922e-72",
+        "passed": true,
+        "gamma": "0.25"
+      },
+      {
+        "z": {
+          "real": "1.5",
+          "imag": "-0.3"
+        },
+        "quadrature": {
+          "real": "0.5923196763899114810005432974",
+          "imag": "0.1108470190627769304683090222"
+        },
+        "closed_form": {
+          "real": "0.5923196763899114810005432974",
+          "imag": "0.1108470190627769304683090222"
+        },
+        "scaled_absolute_error": "1.012455700133960267738135247e-71",
+        "passed": true,
+        "gamma": "0.25"
+      },
+      {
+        "z": {
+          "real": "0.2",
+          "imag": "0.1"
+        },
+        "quadrature": {
+          "real": "3.127333004947336733796314092",
+          "imag": "-1.306824878167068823668481457"
+        },
+        "closed_form": {
+          "real": "3.127333004947336733796314092",
+          "imag": "-1.306824878167068823668481457"
+        },
+        "scaled_absolute_error": "0.0",
+        "passed": true,
+        "gamma": "0.25"
+      },
+      {
+        "z": {
+          "real": "0.7",
+          "imag": "0.4"
+        },
+        "quadrature": {
+          "real": "0.9193237073233282301681691183",
+          "imag": "-0.4413424558671760756743626663"
+        },
+        "closed_form": {
+          "real": "0.9193237073233282301681691183",
+          "imag": "-0.4413424558671760756743626663"
+        },
+        "scaled_absolute_error": "9.92823495820846855518517456e-72",
+        "passed": true,
+        "gamma": "0.4"
+      },
+      {
+        "z": {
+          "real": "1.5",
+          "imag": "-0.3"
+        },
+        "quadrature": {
+          "real": "0.5659124390503796555399274506",
+          "imag": "0.1018497662377827944643835627"
+        },
+        "closed_form": {
+          "real": "0.5659124390503796555399274506",
+          "imag": "0.1018497662377827944643835627"
+        },
+        "scaled_absolute_error": "2.263919769706678091877279823e-72",
+        "passed": true,
+        "gamma": "0.4"
+      },
+      {
+        "z": {
+          "real": "0.2",
+          "imag": "0.1"
+        },
+        "quadrature": {
+          "real": "2.721107540519049565577926809",
+          "imag": "-1.02225646405842371672859487"
+        },
+        "closed_form": {
+          "real": "2.721107540519049565577926809",
+          "imag": "-1.02225646405842371672859487"
+        },
+        "scaled_absolute_error": "2.56898552465651459104183695e-71",
+        "passed": true,
+        "gamma": "0.4"
+      },
+      {
+        "z": {
+          "real": "0.7",
+          "imag": "0.4"
+        },
+        "quadrature": {
+          "real": "0.8057707417595917612273846652",
+          "imag": "-0.3355150686143552346411251843"
+        },
+        "closed_form": {
+          "real": "0.8057707417595917612273846652",
+          "imag": "-0.3355150686143552346411251843"
+        },
+        "scaled_absolute_error": "9.055679078826712367509119291e-72",
+        "passed": true,
+        "gamma": "0.75"
+      },
+      {
+        "z": {
+          "real": "1.5",
+          "imag": "-0.3"
+        },
+        "quadrature": {
+          "real": "0.5113097187749625396206359049",
+          "imag": "0.08421539332504957572731282036"
+        },
+        "closed_form": {
+          "real": "0.5113097187749625396206359049",
+          "imag": "0.08421539332504957572731282036"
+        },
+        "scaled_absolute_error": "1.131959884853339045938639911e-72",
+        "passed": true,
+        "gamma": "0.75"
+      },
+      {
+        "z": {
+          "real": "0.2",
+          "imag": "0.1"
+        },
+        "quadrature": {
+          "real": "2.016634845179610489900440613",
+          "imag": "-0.5935053027495546305261964032"
+        },
+        "closed_form": {
+          "real": "2.016634845179610489900440613",
+          "imag": "-0.5935053027495546305261964032"
+        },
+        "scaled_absolute_error": "1.776152725934606698320530404e-71",
+        "passed": true,
+        "gamma": "0.75"
+      }
+    ],
+    "positive_axis_limit_diagnostics": [
+      {
+        "gamma": "0.25",
+        "z": [
+          "0.01",
+          "0.0001",
+          "0.00000001",
+          "1.0e-16",
+          "1.0e-24"
+        ],
+        "scaled_transform": [
+          "1.298253207099583203384360513",
+          "1.337991813574545621535291072",
+          "1.33970344520793383454116236",
+          "1.339705330829301854996917352",
+          "1.339705330831206423610443433"
+        ],
+        "limit_target": "1.339705330831206425515203424",
+        "relative_errors": [
+          "0.03094122474373127806436619086",
+          "0.001279025482116779949497703231",
+          "0.000001407491057321581627478442138",
+          "1.421633902960138744108583464e-12",
+          "1.421775331531567199483951147e-18"
+        ],
+        "convergence_diagnostic_passed": true
+      },
+      {
+        "gamma": "0.4",
+        "z": [
+          "0.01",
+          "0.0001",
+          "0.00000001",
+          "1.0e-16",
+          "1.0e-24"
+        ],
+        "scaled_transform": [
+          "1.590694541582831175400920527",
+          "1.708324345999408855056397224",
+          "1.717520840467926586248599354",
+          "1.717558550885846102548130695",
+          "1.717558551483904576418941266"
+        ],
+        "limit_target": "1.717558551483914055161094848",
+        "relative_errors": [
+          "0.07386298987680888719965671509",
+          "0.005376355569670187085802926107",
+          "0.00002195617491752338570222628625",
+          "3.482081889413628012168965375e-10",
+          "5.518730144828350990283676408e-15"
+        ],
+        "convergence_diagnostic_passed": true
+      },
+      {
+        "gamma": "0.75",
+        "z": [
+          "0.01",
+          "0.0001",
+          "0.00000001",
+          "1.0e-16",
+          "1.0e-24"
+        ],
+        "scaled_transform": [
+          "2.977957273577101287175444906",
+          "4.166773747329345094894391739",
+          "4.680447991882710788351260085",
+          "4.737019353427332467453786652",
+          "4.737585067713046076434702114"
+        ],
+        "limit_target": "4.73759078199876036214898106",
+        "relative_errors": [
+          "0.371419480784974116960472212",
+          "0.1204867750161804977991546973",
+          "0.01206157153403219488498602321",
+          "0.0001206158568188560392162537087",
+          "0.000001206158568189988824315844959"
+        ],
+        "convergence_diagnostic_passed": true
+      }
+    ],
+    "finite_binomial_truncations": [
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "1.095890410958904109589041096",
+          "imag": "-0.410958904109589041095890411"
+        },
+        "closed_form": {
+          "real": "1.095890410958904109589041096",
+          "imag": "-0.410958904109589041095890411"
+        },
+        "scaled_absolute_error": "0.0",
+        "passed": true,
+        "degree": 0,
+        "pole_order_at_zero": 1,
+        "top_laurent_coefficient": "1.0",
+        "scaled_near_zero_value": "1.0"
+      },
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "0.8069056108087821354850816288",
+          "imag": "-0.158753987614937136423343967"
+        },
+        "closed_form": {
+          "real": "0.8069056108087821354850816288",
+          "imag": "-0.158753987614937136423343967"
+        },
+        "scaled_absolute_error": "0.0",
+        "passed": true,
+        "degree": 1,
+        "pole_order_at_zero": 2,
+        "top_laurent_coefficient": "-0.28",
+        "scaled_near_zero_value": "-0.279999999999999999"
+      },
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "1.01569442980640948853134953",
+          "imag": "-0.5460008174449959770395638237"
+        },
+        "closed_form": {
+          "real": "1.01569442980640948853134953",
+          "imag": "-0.5460008174449959770395638237"
+        },
+        "scaled_absolute_error": "0.0",
+        "passed": true,
+        "degree": 2,
+        "pole_order_at_zero": 3,
+        "top_laurent_coefficient": "0.2744",
+        "scaled_near_zero_value": "0.27439999999999999972"
+      },
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "0.8986536483016676983620217886",
+          "imag": "0.3111078182624057595679957783"
+        },
+        "closed_form": {
+          "real": "0.8986536483016676983620217886",
+          "imag": "0.3111078182624057595679957783"
+        },
+        "scaled_absolute_error": "4.527839539413356183754559645e-72",
+        "passed": true,
+        "degree": 3,
+        "pole_order_at_zero": 4,
+        "top_laurent_coefficient": "-0.460992",
+        "scaled_near_zero_value": "-0.4609919999999999997256"
+      },
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "0.3655989662330971895190114643",
+          "imag": "-2.038894867191400466023365166"
+        },
+        "closed_form": {
+          "real": "0.3655989662330971895190114643",
+          "imag": "-2.038894867191400466023365166"
+        },
+        "scaled_absolute_error": "2.185869221241383599262579057e-72",
+        "passed": true,
+        "degree": 4,
+        "pole_order_at_zero": 5,
+        "top_laurent_coefficient": "1.09716096",
+        "scaled_near_zero_value": "1.097160959999999999539008"
+      },
+      {
+        "z": {
+          "real": "0.8",
+          "imag": "0.3"
+        },
+        "quadrature": {
+          "real": "5.139365018255391280252703179",
+          "imag": "5.218453202297393218478240077"
+        },
+        "closed_form": {
+          "real": "5.139365018255391280252703179",
+          "imag": "5.218453202297393218478240077"
+        },
+        "scaled_absolute_error": "1.398814292896443576739828836e-71",
+        "passed": true,
+        "degree": 5,
+        "pole_order_at_zero": 6,
+        "top_laurent_coefficient": "-3.3792557568",
+        "scaled_near_zero_value": "-3.37925575679999999890283904"
+      }
+    ]
+  },
+  "invalid_global_exponential_remainder_negative_controls": [
+    {
+      "kernel": "exp(-lambda*t)",
+      "truncation_degree": 0,
+      "alpha": "0.5",
+      "t": [
+        10,
+        20,
+        40,
+        80
+      ],
+      "abs_remainder_times_exp_alpha_t": [
+        "148.2778238193399907292215805",
+        "22026.44747916782778277760693",
+        "485165195.4094548153412043187",
+        "235385266837019985.4078997982"
+      ],
+      "finite_growth_diagnostic_passed": true,
+      "analytic_reason": "A nonzero finite polynomial minus a decaying kernel cannot be O(exp(-alpha*t)) as t tends to infinity; finite samples illustrate this obstruction."
+    },
+    {
+      "kernel": "(1+lambda*t)^(-gamma)",
+      "gamma": "0.4",
+      "truncation_degree": 0,
+      "alpha": "0.5",
+      "t": [
+        10,
+        20,
+        40,
+        80
+      ],
+      "abs_remainder_times_exp_alpha_t": [
+        "83.81257947392392550380324632",
+        "14570.42431551919381944878942",
+        "359002651.0666716513209623558",
+        "188673173087144359.8528087267"
+      ],
+      "finite_growth_diagnostic_passed": true,
+      "analytic_reason": "A nonzero finite polynomial minus a decaying kernel cannot be O(exp(-alpha*t)) as t tends to infinity; finite samples illustrate this obstruction."
+    },
+    {
+      "kernel": "exp(-lambda*t)",
+      "truncation_degree": 1,
+      "alpha": "0.5",
+      "t": [
+        10,
+        20,
+        40,
+        80
+      ],
+      "abs_remainder_times_exp_alpha_t": [
+        "890.6142898986962332185874797",
+        "286344.0736481262034546330021",
+        "13099460276.06467296779378694",
+        "12946189676036099197.4344952"
+      ],
+      "finite_growth_diagnostic_passed": true,
+      "analytic_reason": "A nonzero finite polynomial minus a decaying kernel cannot be O(exp(-alpha*t)) as t tends to infinity; finite samples illustrate this obstruction."
+    },
+    {
+      "kernel": "(1+lambda*t)^(-gamma)",
+      "gamma": "0.4",
+      "truncation_degree": 1,
+      "alpha": "0.5",
+      "t": [
+        10,
+        20,
+        40,
+        80
+      ],
+      "abs_remainder_times_exp_alpha_t": [
+        "331.7442660132905640753203778",
+        "108777.7841353984186755154542",
+        "5074847537.522979461933034146",
+        "5083956804062103313.284149274"
+      ],
+      "finite_growth_diagnostic_passed": true,
+      "analytic_reason": "A nonzero finite polynomial minus a decaying kernel cannot be O(exp(-alpha*t)) as t tends to infinity; finite samples illustrate this obstruction."
+    },
+    {
+      "kernel": "exp(-lambda*t)",
+      "truncation_degree": 3,
+      "alpha": "0.5",
+      "t": [
+        10,
+        20,
+        40,
+        80
+      ],
+      "abs_remainder_times_exp_alpha_t": [
+        "5738.777487249531944975029761",
+        "8201187.449248673005214838634",
+        "1597972431948.0462476668761",
+        "6533431928083939054976.805889"
+      ],
+      "finite_growth_diagnostic_passed": true,
+      "analytic_reason": "A nonzero finite polynomial minus a decaying kernel cannot be O(exp(-alpha*t)) as t tends to infinity; finite samples illustrate this obstruction."
+    },
+    {
+      "kernel": "(1+lambda*t)^(-gamma)",
+      "gamma": "0.4",
+      "truncation_degree": 3,
+      "alpha": "0.5",
+      "t": [
+        10,
+        20,
+        40,
+        80
+      ],
+      "abs_remainder_times_exp_alpha_t": [
+        "9698.395563295105159188766865",
+        "12438664.70088912296367214125",
+        "2284248970639.566242405189327",
+        "9057978722370234388182.515558"
+      ],
+      "finite_growth_diagnostic_passed": true,
+      "analytic_reason": "A nonzero finite polynomial minus a decaying kernel cannot be O(exp(-alpha*t)) as t tends to infinity; finite samples illustrate this obstruction."
+    }
+  ],
+  "proof_boundary": "Numerical limits and sampled growth are diagnostics; substitution, finite polynomial integration, domination, and nondecaying polynomial asymptotics justify the corresponding general statements in the manuscript."
+}

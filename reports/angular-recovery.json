@@ -1,0 +1,141 @@
+{
+  "schema": "celestial-angular-recovery-v1",
+  "generated_utc": "2026-11-14T23:16:27.513714+00:00",
+  "python_version": "3.14.3",
+  "mpmath_version": "1.3.0",
+  "sympy_version": "1.14.0",
+  "formal_proof": false,
+  "scope": "Two angular modes, Gaussian direct-Mellin recovery, bounded adversarial noise, and finite-band upper bounds.",
+  "exact": {
+    "orthonormal_gram_matrix": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "smeared_target": "1/4",
+    "independent_angular_integral": "1/4",
+    "uniform_energy_derivative_bound_M": "5/2",
+    "test_function_L2_norm": "sqrt(13)/4",
+    "collinear_negative_control": {
+      "profile": "(1-cos(theta))^(-1/2)",
+      "punctured_domain": "cos(theta)<=1-epsilon",
+      "squared_L2_norm": "2*pi*log(2/epsilon)",
+      "limit_epsilon_to_zero": "+infinity",
+      "interpretation": "An angular pole cannot be inserted into an L2 theorem without checking its hypotheses."
+    }
+  },
+  "numerical": {
+    "working_decimal_digits": 45,
+    "quadrature_control": "Frequency cut at 40; Gaussian expectation cut at |Z|=18. These are numerical replays, not formal integral certificates.",
+    "a": "1.0",
+    "alpha": "1.0",
+    "M": "2.5",
+    "eta": "0.0001",
+    "h": "0.00475053505848659656830664",
+    "sigma": "0.707106781186547524400844",
+    "dual_identity_checks": [
+      {
+        "lambda": "1.0",
+        "frequency_average": "0.993930696389168556120086",
+        "energy_average": "0.993930696389168556120086",
+        "difference": "0.0"
+      },
+      {
+        "lambda": "3.0",
+        "frequency_average": "0.981972143628461025235787",
+        "energy_average": "0.981972143628461025235787",
+        "difference": "5.16728808719776294903125e-45"
+      }
+    ],
+    "general_line_and_bandwidth_checks": [
+      {
+        "a": "0.75",
+        "sigma": "0.4",
+        "h": "0.15",
+        "dual_identity_error": "8.75811540203010669327331e-47",
+        "L1_norm_relative_error": "1.75162308040602133865466e-46"
+      },
+      {
+        "a": "1.25",
+        "sigma": "1.1",
+        "h": "0.03",
+        "dual_identity_error": "8.75811540203010669327331e-47",
+        "L1_norm_relative_error": "1.75162308040602133865466e-46"
+      }
+    ],
+    "kernel_L1_over_2pi": "152.495193949074413007762",
+    "exact_target_Qg": "(0.25 + 0.0j)",
+    "noisy_estimate_Qg": "(0.268207681503776246275534 + 0.0j)",
+    "vector_error": "0.0247153569239643076861309",
+    "vector_upper_bound": "0.0304990387898148826015525",
+    "charge_error": "0.0182076815037762462755342",
+    "charge_upper_bound": "0.0274914620522606836067262",
+    "aligned_noise_charge_shift": "0.0137457310261303418033631",
+    "aligned_noise_attains_operator_bound": true,
+    "independent_sigma_optimizer": "0.707106781186547524400844",
+    "optimized_constant": "1.92892858043280893128899",
+    "sigma_comparison": [
+      {
+        "sigma": "0.25",
+        "optimized_in_h_constant": "2.60667403996857277895808"
+      },
+      {
+        "sigma": "0.5",
+        "optimized_in_h_constant": "2.02435575495377273822206"
+      },
+      {
+        "sigma": "0.707106781186547524400844",
+        "optimized_in_h_constant": "1.92892858043280893128899"
+      },
+      {
+        "sigma": "1.0",
+        "optimized_in_h_constant": "2.0827266276871072323824"
+      },
+      {
+        "sigma": "1.5",
+        "optimized_in_h_constant": "3.17702543076728271159413"
+      }
+    ],
+    "whole_line_norm_B": "1.51637156266179784754213",
+    "finite_band_checks": [
+      {
+        "V": "3.0",
+        "kernel_mass_fraction": "0.966105146475310727066976",
+        "kernel_tail_fraction": "0.0338948535246892729330237",
+        "actual_exact_data_truncation_error": "0.0438980625646267754225183",
+        "truncation_upper_bound": "7.83782476330522721967463",
+        "noisy_vector_error": "0.0463480653378976383857963",
+        "recovery_upper_bound": "7.86780692186882980636079"
+      },
+      {
+        "V": "6.0",
+        "kernel_mass_fraction": "0.999977909503001414558627",
+        "kernel_tail_fraction": "0.0000220904969985854413727761",
+        "actual_exact_data_truncation_error": "0.000000628095687648831580575792",
+        "truncation_upper_bound": "0.00510819273147515462195641",
+        "noisy_vector_error": "0.0247149317507704469408374",
+        "recovery_upper_bound": "0.0356068946518276141502008"
+      },
+      {
+        "V": "10.0",
+        "kernel_mass_fraction": "0.999999999998462540205572",
+        "kernel_tail_fraction": "1.53745979442803485018834e-12",
+        "actual_exact_data_truncation_error": "1.24740769911888619816835e-16",
+        "truncation_upper_bound": "3.55521242792114577272496e-10",
+        "noisy_vector_error": "0.0247153569239451679185193",
+        "recovery_upper_bound": "0.030499039145312679870713"
+      }
+    ]
+  },
+  "passed": true,
+  "limits": [
+    "Finite computations support the written analytical theorems.",
+    "The L2 angular assumptions exclude untreated collinear poles.",
+    "No gauge Ward identity, physical soft charge law, or scattering realization is established."
+  ]
+}

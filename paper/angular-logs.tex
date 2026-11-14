@@ -1,0 +1,273 @@
+\section{Angular soft data and fixed-order logarithmic recovery}
+\label{sec:angularlogs}
+Soft coefficients carry angular, helicity, and sometimes colour data.
+They can be distributions rather than pointwise functions. A recovery
+estimate for a prescribed angular pairing should therefore specify a
+normed space and its dual. We give such a statement, including fixed-order
+logarithmic terms, directly for Mellin observations.
+
+Let $X$ be a nonzero complex Banach space. Angular examples are
+$X=L^2(K,d\Omega)$ for a patch $K$ on the celestial sphere, or
+$X=H^{-s}(S^2)$ paired with $H^s$ test functions. The field component
+and hard kinematics are fixed. Membership in these spaces is an
+assumption: collinear singularities need not belong to $L^2(S^2)$.
+For fields with spin, the pairing uses an appropriate dual test section.
+The angular norm here is distinct from the frequency-variable Sobolev
+norm in Section~\ref{sec:boundary}.
+
+For fixed $a,\alpha,M>0$ and an integer $m\ge0$, suppose
+\begin{equation}\label{eq:vectorclass}
+ \begin{gathered}
+ f(x)=\sum_{k=0}^m u_k(\log(1/x))^k+R(x),\qquad
+ \|R(x)\|_X\le Mx^\alpha\quad(x>0),\\
+ Q_a(f)=\int_0^\infty x^{a-1}\|f(x)\|_X\,dx<\infty.
+ \end{gathered}
+\end{equation}
+All integrals with values in $X$ are Bochner integrals, and the
+functions are assumed strongly measurable. The remainder assumption
+is global; it is not inferred from a finite observation window.
+As before, $x$ is numerical energy in a fixed reference convention,
+and a known leading power has been stripped off.
+Splitting the Mellin integral at one shows that
+\[
+ G(z)=\int_0^\infty x^{z-1}f(x)\,dx
+ \quad\hbox{has principal part}\quad
+ \sum_{k=0}^m\frac{k!u_k}{z^{k+1}}.
+\]
+Indeed, the infrared remainder is holomorphic for $\Re z>-\alpha$,
+and the ultraviolet integral for $\Re z<a$.
+The target $\beta_m=m!u_m$ is the coefficient of the prescribed top pole.
+If $u_m=0$, the actual pole order is lower.
+
+\begin{theorem}[Direct recovery of angular logarithmic data]
+\label{thm:vectorlogs}
+Assume \eqref{eq:vectorclass} and observe
+$Y(\nu)=G(a+i\nu)+e(\nu)$ with
+$\sup_\nu\|e(\nu)\|_X\le\eta$.
+For $\sigma,h,d>0$, define
+\begin{align}
+ E_{h,\sigma}(Y)&=\frac1{2\pi}\int_{\mathbb R}
+ Y(\nu)h^{-a-i\nu}e^{\sigma^2(a+i\nu)^2/2}\,d\nu,
+ \label{eq:vectoraverage}\\
+ \widehat\beta_{m,h}(Y)&=d^{-m}\sum_{j=0}^m
+ (-1)^{m-j}\binom mj E_{he^{-jd},\sigma}(Y).
+ \label{eq:logestimator}
+\end{align}
+Set
+\begin{equation}\label{eq:UVconstants}
+ U=\frac{e^{\alpha^2\sigma^2/2}(1+e^{-\alpha d})^m}{d^m},
+ \qquad
+ V=\frac{e^{a^2\sigma^2/2}(1+e^{ad})^m}
+ {\sqrt{2\pi}\,\sigma d^m}.
+\end{equation}
+Then
+\begin{equation}\label{eq:vectorbound}
+ \|\widehat\beta_{m,h}-\beta_m\|_X
+ \le UMh^\alpha+V\eta h^{-a}.
+\end{equation}
+Every bounded linear functional $\ell\in X^*$ consequently satisfies
+\begin{equation}\label{eq:chargeerror}
+ |\ell(\widehat\beta_{m,h})-\ell(\beta_m)|
+ \le\|\ell\|_{X^*}(UMh^\alpha+V\eta h^{-a}).
+\end{equation}
+For fixed $m,d,\sigma,a,\alpha$, optimization in $h$ gives an upper
+bound proportional to
+$M^{a/(a+\alpha)}\eta^{\alpha/(a+\alpha)}$.
+No bound uniform in log degree $m$ is asserted.
+\end{theorem}
+\begin{proof}
+The integrals converge absolutely in $X$, since
+$\|G(a+i\nu)\|_X\le Q_a(f)$ and the frequency kernel is Gaussian.
+Bochner Fubini and the scalar Gaussian integral give
+\[
+ E_{h,\sigma}(G)=\mathbb E f(he^{\sigma Z}),\qquad Z\sim N(0,1).
+\]
+Put $L=-\log h$ and
+$S(t)=\mathbb E\sum_{k=0}^m u_k(t-\sigma Z)^k$.
+This is an $X$-valued polynomial of degree at most $m$, with top
+coefficient $u_m$. Its forward difference obeys
+\[
+ d^{-m}\sum_{j=0}^m(-1)^{m-j}\binom mj S(L+jd)=m!u_m.
+\]
+At scale $he^{-jd}$ the remainder contribution has norm at most
+$Mh^\alpha e^{-\alpha jd}e^{\alpha^2\sigma^2/2}$.
+The frequency-kernel $L^1$ norm is
+$h^{-a}e^{ajd}e^{a^2\sigma^2/2}/(\sqrt{2\pi}\sigma)$.
+Summing absolute values of the binomial weights proves
+\eqref{eq:vectorbound}. Duality proves \eqref{eq:chargeerror}.
+For $M,\eta>0$, the choice
+\[
+ h_* =\left(\frac{aV\eta}{\alpha UM}\right)^{1/(a+\alpha)}
+\]
+gives upper constant
+\[
+ U^{a/(a+\alpha)}V^{\alpha/(a+\alpha)}
+ \left[(a/\alpha)^{\alpha/(a+\alpha)}
+       +(\alpha/a)^{a/(a+\alpha)}\right].
+\]
+\end{proof}
+
+\begin{theorem}[The fixed-degree error exponent cannot be improved]
+\label{thm:loglower}
+For $m\ge1$, let $\mathcal R_m(\eta)$ be the minimax norm error
+for $\beta_m$ over the class \eqref{eq:vectorclass} and the stated
+noise balls. Put $C_m=(m/(\alpha e))^m$ and
+$\theta=\alpha/(a+\alpha)$. Then
+\begin{equation}\label{eq:loglower}
+ \mathcal R_m(\eta)\ge\frac12
+ \left(\frac{m!M}{C_m}\right)^{a/(a+\alpha)}
+ (2\eta a^{m+1})^\theta.
+\end{equation}
+Together with Theorem~\ref{thm:vectorlogs}, this proves the matching
+minimax exponent for every fixed positive log degree. The constants
+are not claimed to be sharp.
+\end{theorem}
+\begin{proof}
+The zero-noise lower bound is zero and needs no construction; assume
+$\eta>0$ in what follows.
+Choose a unit vector $v\in X$ and consider
+\[
+ f_{h,c}(x)=c\,[\log(h/x)]_+^m v,
+ \qquad P(t)=c(t+\log h)^m v,
+\]
+where $[y]_+=\max(y,0)$. For $x<h$ the remainder vanishes. For
+$x\ge h$, set $s=\log(x/h)\ge0$. Then
+\[
+ \frac{\|f_{h,c}(x)-P(\log(1/x))\|_X}{x^\alpha}
+ =ch^{-\alpha}s^me^{-\alpha s}\le ch^{-\alpha}C_m.
+\]
+The maximum occurs at $s=m/\alpha$.
+Choose $c=Mh^\alpha/C_m$ to satisfy the same global prior.
+Direct integration yields
+\[
+ G_{h,c}(z)=\frac{cm!h^z}{z^{m+1}}v,\qquad
+ \|G_{h,c}\|_{a,\infty}=\frac{cm!h^a}{a^{m+1}}.
+\]
+Its top coefficient is $cm!v$. Set
+\[
+ h=\left(\frac{2\eta C_ma^{m+1}}{m!M}\right)^{1/(a+\alpha)}.
+\]
+Zero and $f_{h,c}$ have a common midpoint observation within
+$\eta$ of each transform, and their target coefficients differ by
+$cm!v$. The triangle inequality forces error at least $cm!/2$,
+which is \eqref{eq:loglower}.
+\end{proof}
+
+This construction allows arbitrary lower polynomial coefficients,
+as does the observation class. Additional known constraints on those
+coefficients could change the minimax problem. For a nonzero functional
+$\ell$, choose $v$ approaching its dual-norm supremum; the same argument
+gives the charge-specific lower bound multiplied by $\|\ell\|$.
+In a Hilbert space this factor is attained by a vector aligned with
+the test function.
+
+\begin{corollary}[Finite angular pairings and frequency bands]
+\label{cor:angularband}
+If $X=L^2(K,d\Omega)$ and $g\in L^2(K,d\Omega)$, define
+\[
+ Q_g=\int_K\overline{g(\zeta)}\,\beta_m(\zeta)\,d\Omega.
+\]
+Then \eqref{eq:chargeerror} holds with $\|\ell\|=\|g\|_2$.
+For $X=H^{-s}(S^2)$ the corresponding bound uses the $H^s$ norm
+of the dual test function. If data are available only for
+$|\nu|\le\Omega$ and $Q_a(f)\le Q$ is known, truncate each
+integral in \eqref{eq:logestimator}. Its norm error is at most
+\begin{equation}\label{eq:logband}
+ UMh^\alpha+Vh^{-a}\left[
+ \eta\operatorname{erf}(\sigma\Omega/\sqrt2)
+ +Q\operatorname{erfc}(\sigma\Omega/\sqrt2)\right].
+\end{equation}
+\end{corollary}
+\begin{proof}
+The first statements are Hilbert-space and Sobolev duality.
+For each Gaussian integral the measured and omitted kernel norms
+are its full $L^1$ norm times, respectively, the displayed error
+function and complementary error function. Use $\|e\|\le\eta$
+on the band and $\|G\|\le Q$ outside it, then sum binomial weights.
+\end{proof}
+
+For $m=0$, tuning the smoothing variance improves the explicit upper
+constant. In the optimized bound its $\sigma$-dependent factor is
+\[
+ \exp\!\left(\frac{a\alpha\sigma^2}{2}\right)
+ (\sqrt{2\pi}\sigma)^{-\alpha/(a+\alpha)}.
+\]
+Differentiating its logarithm gives the unique minimum
+$\sigma^2=1/[a(a+\alpha)]$. Thus at $a=\alpha=1$,
+\begin{equation}\label{eq:improvedconstant}
+ \|\widehat\beta_0-\beta_0\|_X
+ \le2(e/\pi)^{1/4}\sqrt{M\eta},\qquad
+ h=\pi^{-1/4}\sqrt{\eta/M},\quad\sigma=1/\sqrt2.
+\end{equation}
+For the highest coefficient with $m>0$, the same variance minimizes this derived upper constant
+at fixed $d$, because the remaining binomial factors do not depend
+on $\sigma$. This optimizes the displayed bound, not all estimators.
+
+\input{paper/full-jet.tex}
+
+\subsection{Relation to physical soft charges and loop calculations}
+The object $Q_g$ is a smeared coefficient. If an independent field-theory
+derivation identifies a normalized physical charge as
+\[
+ Q_{\mathrm{phys}}[\varepsilon]
+ =\ell_\varepsilon(\beta_m)+Q_{\mathrm{hard}}[\varepsilon],
+\]
+then the coefficient estimate transfers with factor
+$\|\ell_\varepsilon\|$, plus any independently bounded hard-sector
+error. For a differential angular map $D$, the dual test is
+$D^*\varepsilon$, which must belong to $X^*$.
+This transfer requires the charge map, normalization, boundary
+conditions, and hard contribution from the physical theory.
+The recovery theorem supplies none of those Ward-identity inputs.
+The derivation of actual logarithmic graviton charges involves
+radiative phase space and dressed fields \cite{wardlogs}.
+
+Logarithmic soft terms and higher-pole celestial operators are established
+physics \cite{sahoosen,loopcurrents,longrange}. The integer $m$ in
+\eqref{eq:vectorclass} denotes log degree, not loop order: for example,
+one-loop Yang--Mills soft currents can exhibit double and triple poles
+\cite{loopcurrents}. Our statement quantifies recovery if a specified
+fixed-order coefficient satisfies the stated uniform remainder bound.
+It does not derive the coefficient from an arbitrary loop amplitude.
+
+\subsection{Why a fixed-order estimate is not a resummation theorem}
+\label{sec:resummation}
+Two elementary Laplace--Mellin examples make the scope testable.
+They illustrate the shifted poles and branch structures already
+discussed in the celestial literature \cite{gu}.
+Use an infrared kernel supported on $0<x\le1$ and set $t=\log(1/x)$.
+For $\lambda>0$,
+\begin{equation}\label{eq:shiftedpole}
+ \int_0^\infty e^{-zt}e^{-\lambda t}\,dt=\frac1{z+\lambda},
+ \qquad
+ \int_0^\infty e^{-zt}\sum_{j=0}^n
+ \frac{(-\lambda t)^j}{j!}\,dt
+ =\sum_{j=0}^n\frac{(-\lambda)^j}{z^{j+1}}.
+\end{equation}
+Every finite truncation has poles at zero, while the resummed kernel
+has a shifted pole. Their difference is not $O(e^{-\alpha t})$
+as $t\to\infty$, so it fails the remainder prior of our theorem.
+
+For $0<\gamma<1$, another exactly integrable model gives
+\begin{align}
+ H(z)&=\int_0^\infty e^{-zt}(1+\lambda t)^{-\gamma}\,dt
+ \label{eq:branchmodel}\\
+ &=\lambda^{-\gamma}z^{\gamma-1}e^{z/\lambda}
+ \Gamma(1-\gamma,z/\lambda),\qquad \Re z>0,\nonumber\\
+ z^{1-\gamma}H(z)&\longrightarrow
+ \lambda^{-\gamma}\Gamma(1-\gamma)\quad(z\downarrow0).
+ \label{eq:branchlimit}
+\end{align}
+The substitution $u=1+\lambda t$ proves the incomplete-gamma formula.
+Alternatively, after $u=zt$, the last expression is
+$\int_0^\infty e^{-u}(z+\lambda u)^{-\gamma}\,du$;
+domination by $e^{-u}(\lambda u)^{-\gamma}$ proves the limit.
+The fractional power corresponds to a branch point of the continuation,
+not a finite Laurent pole. In contrast, truncating the formal binomial
+series at degree $n$ gives
+\[
+ \sum_{j=0}^n\frac{(-1)^j(\gamma)_j\lambda^j}{z^{j+1}}.
+\]
+No interchange of an infinite perturbative sum and the Mellin integral
+is used or justified here. These controls prevent a finite-log fit
+from being reported as a proof of an all-orders resummed soft algebra.

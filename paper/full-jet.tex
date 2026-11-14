@@ -1,0 +1,145 @@
+\subsection{The entire principal part and the cost of lower coefficients}
+\label{sec:fulljet}
+The highest coefficient is only one part of a logarithmic soft
+expansion. In a fixed reference-energy convention, write
+$\beta_k=k!u_k$, $0\le k\le m$, for all coefficients of its Mellin
+principal part. Lower coefficients can depend on the higher ones
+under a change of convention, as Section~\ref{sec:units} explains.
+We now give simultaneous estimators and componentwise optimal rates
+for this full principal part. Holomorphic Laurent coefficients are
+not recovery targets here.
+
+At the same scales as Theorem~\ref{thm:vectorlogs}, put
+$L=-\log h$ and define the Lagrange polynomials
+\[
+ \ell_j(t)=\prod_{\substack{0\le r\le m\\r\ne j}}
+ \frac{t-L-rd}{d(j-r)},\qquad 0\le j\le m.
+\]
+For coefficient extraction denoted by $[t^n]$, set
+\begin{equation}\label{eq:fullweights}
+ W_{k,j}=\sum_{r=0}^{\lfloor(m-k)/2\rfloor}
+ \frac{(-\sigma^2/2)^r}{r!}(k+2r)!
+ [t^{k+2r}]\ell_j(t),\qquad
+ \widehat\beta_k=\sum_{j=0}^m W_{k,j}E_{he^{-jd},\sigma}(Y).
+\end{equation}
+These are explicit finite real weights. No unknown soft coefficient
+enters their construction. For $n\ge0$ define the positive polynomial
+\[
+ H_n(A;\sigma)=\sum_{r=0}^{\lfloor n/2\rfloor}
+ \frac{(\sigma^2/2)^r A^{n-2r}}{r!(n-2r)!}.
+\]
+
+\begin{theorem}[Full principal-part recovery]\label{thm:fulljet}
+Under \eqref{eq:vectorclass}, let $m\ge1$ and fix $d,\sigma>0$.
+For every $k\le m$, the estimator \eqref{eq:fullweights} satisfies
+\begin{align}
+ \|\widehat\beta_k-\beta_k\|_X
+ &\le \frac{H_{m-k}(|L|+md;\sigma)}{d^m}\,
+ \mathcal E(h),\label{eq:fullbound}\\
+ \mathcal E(h)&=
+ e^{\alpha^2\sigma^2/2}Mh^\alpha(1+e^{-\alpha d})^m
+ +\frac{e^{a^2\sigma^2/2}}{\sqrt{2\pi}\sigma}
+ \eta h^{-a}(1+e^{ad})^m.\nonumber
+\end{align}
+Let $\mathcal R_{m,k}(\eta)$ be the minimax norm error for the
+individual target $\beta_k$. As $\eta/M\downarrow0$, with all other
+parameters fixed,
+\begin{equation}\label{eq:fullrate}
+ \mathcal R_{m,k}(\eta)\asymp
+ M^{a/(a+\alpha)}\eta^{\alpha/(a+\alpha)}
+ [\log(M/\eta)]^{m-k}.
+\end{equation}
+Here $\asymp$ means upper and lower positive constants independent of
+$M,\eta$ in the stated small-noise regime. It does not assert a sharp
+minimax constant or a bound uniform in $m$.
+\end{theorem}
+\begin{proof}
+The polynomial component of each exact-data Gaussian average is
+$S(t)=\mathbb E P(t-\sigma Z)$, where $P(t)=\sum u_kt^k$.
+On degree-at-most-$m$ polynomials, Gaussian averaging is the finite
+heat operator $S=e^{(\sigma^2/2)\partial_t^2}P$.
+Lagrange interpolation reconstructs $S$ from $S(L+jd)$, and the
+finite inverse operator $e^{-(\sigma^2/2)\partial_t^2}$ recovers $P$.
+Applying $k![t^k]$ gives exactly \eqref{eq:fullweights}.
+This argument uses the polynomial component of a convergent Gaussian
+average; it does not assume that a global polynomial alone has an
+absolutely convergent Mellin transform.
+
+Put $A=|L|+md$. The denominator of $\ell_j$ has absolute value
+$d^m j!(m-j)!$, and every root of its numerator has absolute value
+at most $A$. Hence, for $0\le n\le m$,
+\[
+ |[t^n]\ell_j(t)|\le
+ \frac{\binom mn A^{m-n}}{d^m j!(m-j)!}.
+\]
+Substitution in \eqref{eq:fullweights} gives
+\[
+ |W_{k,j}|\le\binom mj d^{-m}H_{m-k}(A;\sigma).
+\]
+Each observed Gaussian average differs from its polynomial component
+by at most
+\[
+ e^{\alpha^2\sigma^2/2}Mh^\alpha e^{-\alpha jd}
+ +\frac{e^{a^2\sigma^2/2}}{\sqrt{2\pi}\sigma}
+ \eta h^{-a}e^{ajd}.
+\]
+Summation proves \eqref{eq:fullbound}.
+
+For the upper rate choose
+$h=(\eta/M)^{1/(a+\alpha)}$ and
+$L=\log(M/\eta)/(a+\alpha)$.
+Both terms in $\mathcal E(h)$ are a fixed constant times
+$S_\eta=M^{a/(a+\alpha)}\eta^{\alpha/(a+\alpha)}$.
+Since $H_{m-k}(|L|+md;\sigma)=O((1+|L|)^{m-k})$, the upper
+bound in \eqref{eq:fullrate} follows.
+
+For the lower rate use the same cutoff pair as
+Theorem~\ref{thm:loglower}. Set
+\[
+ C_m=(m/(\alpha e))^m,\quad
+ K_0=\frac{2a^{m+1}C_m}{m!},\quad
+ h_0=(K_0\eta/M)^{1/(a+\alpha)},\quad L_0=-\log h_0.
+\]
+The coefficient of $t^k$ in
+$P(t)=c(t-L_0)^m v$, with $c=Mh_0^\alpha/C_m$, is
+$c\binom mk(-L_0)^{m-k}v$.
+The common midpoint observation has noise at most $\eta$, so
+\begin{equation}\label{eq:fulllower}
+ \mathcal R_{m,k}(\eta)\ge
+ \frac{1}{2(m-k)!}
+ \left(\frac{m!}{C_m}\right)^{a/(a+\alpha)}
+ (2a^{m+1})^{\alpha/(a+\alpha)}S_\eta |L_0|^{m-k}.
+\end{equation}
+Since $L_0=[\log(M/\eta)-\log K_0]/(a+\alpha)$, this proves
+the matching small-noise lower rate. The zero-noise lower bound
+is trivially zero.
+\end{proof}
+
+For example, at degree $m=2$, setting
+$S_\eta=M^{a/(a+\alpha)}\eta^{\alpha/(a+\alpha)}$ gives
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Target coefficient & Componentwise minimax order as $\eta/M\downarrow0$\\
+\midrule
+Triple pole $\beta_2$ & $S_\eta$\\
+Double pole $\beta_1$ & $S_\eta\log(M/\eta)$\\
+Ordinary residue $\beta_0$ & $S_\eta[\log(M/\eta)]^2$\\
+\bottomrule
+\end{tabular}
+\end{center}
+This loss concerns unknown lower and higher coefficients in the stated
+class, at fixed convention. Knowing some nuisance coefficients can
+improve a different recovery problem. A bounded angular pairing
+inherits each upper estimate with its dual norm and the corresponding
+lower rate when the functional is nonzero. For a continuum frequency
+band, the same weight bound applies after replacing the noise term
+$\eta$ in $\mathcal E(h)$ by
+$\eta\operatorname{erf}(\sigma\Omega/\sqrt2)
++Q\operatorname{erfc}(\sigma\Omega/\sqrt2)$.
+
+Moving the interpolation window does not remove the lower bound for a
+coefficient at a prescribed reference scale. Choosing a new reference
+can instead change that lower coefficient, hence change the recovery
+target. This is separate from a passive change of energy unit with a
+co-transforming reference, which Section~\ref{sec:units} treats.

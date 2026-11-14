@@ -27,3 +27,7 @@ Author-name provenance is the six-person `CITATION.cff` on the `paper` branch of
 | H. J. Brown, Y. Grabovsky, *On feasibility of extrapolation of completely monotone functions*, arXiv:2401.15178v2 (2024). [Primary paper](https://arxiv.org/abs/2401.15178v2) | Close prior art: impossibility of left extrapolation despite complete monotonicity and power-law right extrapolation. Their observation interval and norms differ from the Mellin-line operator used here. Positivity alone is not a new instability principle. |
 
 The new direct-data result combines a classical Gaussian smoothing identity with a standard bias/noise balance and an explicit two-profile lower bound. The candidate contribution is the precise residue-recovery observation model and its connection to the celestial problem; no claim of discovering regularization, minimax methods, or the general instability of analytic continuation is made. Priority of the exact combined theorems remains unresolved.
+
+## Angular and logarithmic follow-up
+
+The [expanded primary-source audit](RESEARCH-CONTEXT.md) covers physical logarithmic soft theorems, one-loop celestial currents, charge Ward identities, and resummation, alongside inverse-problem antecedents. The [bounded research map](OPEN-PROBLEMS.md) distinguishes published questions from this project's conditional mathematical progress. The present recovery of a full fixed-degree principal part has componentwise minimax bounds, including logarithmic losses for lower coefficients; it is not a proof of the cited researchers' entire open programme.
