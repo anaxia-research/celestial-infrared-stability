@@ -1,0 +1,300 @@
+{
+  "schema": "celestial-radiative-example-v1",
+  "generated_utc": "2026-11-14T23:47:06.435182+00:00",
+  "python_version": "3.14.3",
+  "sympy_version": "1.14.0",
+  "mpmath_version": "1.3.0",
+  "formal_proof": false,
+  "scope": "A smooth electric-parity Bondi-radiative datum, normalized soft functional, and idealized direct-news detector.",
+  "exact": {
+    "news_integral": "1",
+    "news_squared_integral": "1/(2*pi*tau)",
+    "window_memory_fraction": "2*atan(U/tau)/pi",
+    "window_squared_news_integral": "(U*tau + (U**2 + tau**2)*atan(U/tau))/(pi**2*tau*(U**2 + tau**2))",
+    "sphere_harmonics": [
+      {
+        "l": 0,
+        "lambda": 0,
+        "direct_tensor_norm_squared": "0",
+        "Bochner_formula": "0"
+      },
+      {
+        "l": 1,
+        "lambda": 2,
+        "direct_tensor_norm_squared": "0",
+        "Bochner_formula": "0"
+      },
+      {
+        "l": 2,
+        "lambda": 6,
+        "direct_tensor_norm_squared": "12",
+        "Bochner_formula": "12"
+      },
+      {
+        "l": 3,
+        "lambda": 12,
+        "direct_tensor_norm_squared": "60",
+        "Bochner_formula": "60"
+      },
+      {
+        "l": 4,
+        "lambda": 20,
+        "direct_tensor_norm_squared": "180",
+        "Bochner_formula": "180"
+      },
+      {
+        "l": 5,
+        "lambda": 30,
+        "direct_tensor_norm_squared": "420",
+        "Bochner_formula": "420"
+      },
+      {
+        "l": 6,
+        "lambda": 42,
+        "direct_tensor_norm_squared": "840",
+        "Bochner_formula": "840"
+      },
+      {
+        "l": 7,
+        "lambda": 56,
+        "direct_tensor_norm_squared": "1512",
+        "Bochner_formula": "1512"
+      },
+      {
+        "l": 8,
+        "lambda": 72,
+        "direct_tensor_norm_squared": "2520",
+        "Bochner_formula": "2520"
+      },
+      {
+        "l": 9,
+        "lambda": 90,
+        "direct_tensor_norm_squared": "3960",
+        "Bochner_formula": "3960"
+      },
+      {
+        "l": 10,
+        "lambda": 110,
+        "direct_tensor_norm_squared": "5940",
+        "Bochner_formula": "5940"
+      },
+      {
+        "l": 11,
+        "lambda": 132,
+        "direct_tensor_norm_squared": "8580",
+        "Bochner_formula": "8580"
+      },
+      {
+        "l": 12,
+        "lambda": 156,
+        "direct_tensor_norm_squared": "12012",
+        "Bochner_formula": "12012"
+      },
+      {
+        "l": 13,
+        "lambda": 182,
+        "direct_tensor_norm_squared": "16380",
+        "Bochner_formula": "16380"
+      },
+      {
+        "l": 14,
+        "lambda": 210,
+        "direct_tensor_norm_squared": "21840",
+        "Bochner_formula": "21840"
+      },
+      {
+        "l": 15,
+        "lambda": 240,
+        "direct_tensor_norm_squared": "28560",
+        "Bochner_formula": "28560"
+      },
+      {
+        "l": 16,
+        "lambda": 272,
+        "direct_tensor_norm_squared": "36720",
+        "Bochner_formula": "36720"
+      },
+      {
+        "l": 17,
+        "lambda": 306,
+        "direct_tensor_norm_squared": "46512",
+        "Bochner_formula": "46512"
+      },
+      {
+        "l": 18,
+        "lambda": 342,
+        "direct_tensor_norm_squared": "58140",
+        "Bochner_formula": "58140"
+      },
+      {
+        "l": 19,
+        "lambda": 380,
+        "direct_tensor_norm_squared": "71820",
+        "Bochner_formula": "71820"
+      },
+      {
+        "l": 20,
+        "lambda": 420,
+        "direct_tensor_norm_squared": "87780",
+        "Bochner_formula": "87780"
+      }
+    ],
+    "quadrupole_charge": "-sqrt(3)*B/(8*pi*G)",
+    "angular_high_degree_control": {
+      "charge_operator_norm": "sqrt((l-1)*l*(l+1)*(l+2)/2)/(16*pi*G)",
+      "asymptotic": "l^2/(16*pi*G*sqrt(2))",
+      "uniform_H2_test_bound": "norm(ell_F)<=norm(F)_H2/(16*pi*G*sqrt(2))",
+      "uniform_bound_over_L2_normalized_tests": false
+    },
+    "gravitational_energy": "B**2/(64*pi**2*G*tau)",
+    "negative_controls": {
+      "wrong_4pi_charge_has_ratio": "4",
+      "missing_factor_two_in_energy_rejected": true
+    },
+    "aligned_detector_noise_attains_dual_bound": true
+  },
+  "numerical": {
+    "working_decimal_digits": 40,
+    "fourier_convention": "integral exp(i*omega*u) N(u) du",
+    "fourier_quadratures": [
+      {
+        "tau": "0.7",
+        "omega": "0.3",
+        "quadrature": "0.810584245970187099837729",
+        "formula": "0.810584245970187099837729",
+        "absolute_error": "0.0"
+      },
+      {
+        "tau": "0.7",
+        "omega": "1.2",
+        "quadrature": "0.431710523429079692977146",
+        "formula": "0.431710523429079692977146",
+        "absolute_error": "0.0"
+      },
+      {
+        "tau": "2.5",
+        "omega": "0.3",
+        "quadrature": "0.472366552741014707138047",
+        "formula": "0.472366552741014707138047",
+        "absolute_error": "5.7397185098744507225036e-42"
+      },
+      {
+        "tau": "2.5",
+        "omega": "1.2",
+        "quadrature": "0.0497870683678639429793424",
+        "formula": "0.0497870683678639429793424",
+        "absolute_error": "2.15239444120291902093885e-42"
+      }
+    ],
+    "time_quadratures": [
+      {
+        "tau": "0.7",
+        "full_squared_news_norm": "0.511569459938235007828555",
+        "window_squared_news_norm": "0.50346965293751553303648",
+        "window_memory_fraction": "0.785666153120125179663145"
+      },
+      {
+        "tau": "2.0",
+        "full_squared_news_norm": "0.179049310978382252739994",
+        "window_squared_news_norm": "0.146517821288006122807179",
+        "window_memory_fraction": "0.5"
+      },
+      {
+        "tau": "10.0",
+        "full_squared_news_norm": "0.0358098621956764505479988",
+        "window_squared_news_norm": "0.00888416882502158789498315",
+        "window_memory_fraction": "0.125665916378002367627495"
+      }
+    ],
+    "Mellin_quadratures": [
+      {
+        "a": "1.0",
+        "nu": "0.0",
+        "tau": "0.7",
+        "quadrature_error": "0.0",
+        "sample_norm": "2.14285714285714285714286",
+        "whole_line_supremum": "2.14285714285714285714286"
+      },
+      {
+        "a": "1.0",
+        "nu": "0.8",
+        "tau": "2.0",
+        "quadrature_error": "8.11718776086833968661485e-42",
+        "sample_norm": "0.480148015975137125691818",
+        "whole_line_supremum": "0.75"
+      },
+      {
+        "a": "1.5",
+        "nu": "2.25",
+        "tau": "0.7",
+        "quadrature_error": "5.91636641938129087709227e-42",
+        "sample_norm": "0.431777541580355893661799",
+        "whole_line_supremum": "2.26980809070770422137411"
+      }
+    ],
+    "fixed_memory_hiding_sequence": [
+      {
+        "tau": "1.0",
+        "memory_norm": "1.5",
+        "quadrupole_soft_charge": "-0.103374167891586009283374",
+        "a_one_Mellin_line_norm": "1.5",
+        "gravitational_energy": "0.00356207286242593727732389",
+        "finite_time_memory_fraction": "0.704832764699133451649198",
+        "required_derivative_bound_M": "1.5"
+      },
+      {
+        "tau": "10.0",
+        "memory_norm": "1.5",
+        "quadrupole_soft_charge": "-0.103374167891586009283374",
+        "a_one_Mellin_line_norm": "0.15",
+        "gravitational_energy": "0.000356207286242593727732389",
+        "finite_time_memory_fraction": "0.125665916378002367627495",
+        "required_derivative_bound_M": "15.0"
+      },
+      {
+        "tau": "100.0",
+        "memory_norm": "1.5",
+        "quadrupole_soft_charge": "-0.103374167891586009283374",
+        "a_one_Mellin_line_norm": "0.015",
+        "gravitational_energy": "0.0000356207286242593727732389",
+        "finite_time_memory_fraction": "0.0127306982019455933585959",
+        "required_derivative_bound_M": "150.0"
+      },
+      {
+        "tau": "1000.0",
+        "memory_norm": "1.5",
+        "quadrupole_soft_charge": "-0.103374167891586009283374",
+        "a_one_Mellin_line_norm": "0.0015",
+        "gravitational_energy": "0.00000356207286242593727732389",
+        "finite_time_memory_fraction": "0.00127323784708651072750296",
+        "required_derivative_bound_M": "1500.0"
+      }
+    ],
+    "infrared_Fock_negative_control": {
+      "formula": "integral_epsilon^infinity exp(-2*tau*w)/w dw = E1(2*tau*epsilon)",
+      "analytical_limit": "+infinity as epsilon goes to zero",
+      "cutoff_checks": [
+        {
+          "epsilon": "0.1",
+          "cutoff_integral_divided_by_B_squared": "0.702380118865662478583029"
+        },
+        {
+          "epsilon": "0.001",
+          "cutoff_integral_divided_by_B_squared": "4.94824125651360416722087"
+        },
+        {
+          "epsilon": "0.000001",
+          "cutoff_integral_divided_by_B_squared": "11.8520045319388506282225"
+        }
+      ]
+    }
+  },
+  "passed": true,
+  "limits": [
+    "The analytic proofs establish general statements; finite computations replay identities and numerical examples.",
+    "No complete Einstein scattering solution, antipodal matching, or hard-sector Ward identity is constructed.",
+    "Nonzero memory requires care beyond the ordinary zero-memory Fock representation.",
+    "News Mellin data are not unstripped graviton-amplitude principal-series data.",
+    "The idealized detector noise norm is assumed, not derived from an instrument or quantum dressing prescription."
+  ]
+}

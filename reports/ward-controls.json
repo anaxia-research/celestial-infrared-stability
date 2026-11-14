@@ -1,0 +1,86 @@
+{
+  "schema": "celestial-ward-controls-v1",
+  "generated_utc": "2026-11-14T23:53:28.001524+00:00",
+  "passed": true,
+  "formal_proof": false,
+  "contact_coefficients": {
+    "1": [
+      1,
+      1
+    ],
+    "2": [
+      1,
+      1,
+      1
+    ],
+    "3": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "4": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "5": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "6": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "7": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "8": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "published_newtonian_TT_difference_divided_by_K": [
+    [
+      "-25/8",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "25/8",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "scope": "Conditional polynomial contact terms and a known TT projection. No quantum loop or Ward identity is derived."
+}

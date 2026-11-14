@@ -8,6 +8,16 @@ Working research draft with one unranked prospective author list supplied by the
 
 [Read the paper](paper/manuscript.pdf) · [Reproduce the calculations](#reproduce) · [Sources and originality review](RELATED-WORK.md) · [Proof status and open targets](PROOF-STATUS.md)
 
+## Gravitational memory, resummed data, and ordered limits
+
+The current draft derives the conventional Bondi soft contribution for a smooth finite-flux news family. At fixed memory, increasing pulse duration drives the displaced Mellin data, radiated energy, and finite-window news signal to zero. The proof gives exact window errors and matching recovery exponents when the duration is unknown but the frequency derivative is uniformly bounded. [Bondi proof](paper/radiative-example.tex)
+
+A separate theorem recovers the amplitude of a prescribed resummed branch of exponent $\gamma$, with matching small-noise error order `M^(a/(a+alpha)) eta^(alpha/(a+alpha)) [log(M/eta)]^gamma`. The template parameters are known and the remainder obeys a global power bound. [Branch recovery proof](paper/branch-recovery.tex)
+
+A double Mellin example gives two different ordered residues. A two-channel retarded-time calculation gives an exact inverse noise norm on the line with real Mellin weight $1/2$. The former concerns a scalar model and the latter concerns a change of transform representation. [Ordered limits](paper/ordered-limits.tex) · [Fourier–Mellin identity](paper/framework-bridge.tex)
+
+The [research ledger](RESEARCH-ATTEMPTS.md) records the outcomes across eight topics, including recent results from the cited researchers and remaining physical questions.
+
 ## Angular soft data and logarithmic modes
 
 The current revision connects the two research targets through a direct-data theorem. For angular coefficient fields in a specified Banach space, Gaussian Mellin averages followed by finite differences recover the highest fixed-order soft-log pole coefficient. The written proof gives matching upper and lower error exponents at each fixed log degree, under an explicit global remainder prior.
@@ -90,6 +100,11 @@ python scripts/verify_direct_stability.py
 python scripts/verify_angular_recovery.py
 python scripts/verify_log_recovery.py
 python scripts/verify_resummation.py
+python scripts/verify_radiative_example.py
+python scripts/verify_branch_recovery.py
+python scripts/verify_ordered_limits.py
+python scripts/verify_framework_bridge.py
+python scripts/verify_ward_controls.py
 python scripts/verify_scale_jets.py
 julia --startup-file=no julia/verify_exact.jl
 julia --startup-file=no julia/verify_log_jet.jl

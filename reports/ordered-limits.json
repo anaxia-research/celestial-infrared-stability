@@ -1,0 +1,27 @@
+{
+  "schema": "celestial-ordered-limits-v1",
+  "generated_utc": "2026-11-14T23:45:39.699476+00:00",
+  "formal_proof": false,
+  "passed": true,
+  "exact_sequential_soft_targets": [
+    "0",
+    "1"
+  ],
+  "exact_iterated_residues": [
+    "0",
+    "1"
+  ],
+  "double_Mellin_quadrature_spot_checks": [
+    {
+      "z": "0.7",
+      "w": "1.2",
+      "absolute_quadrature_error": "2.0045735325691467346e-51"
+    },
+    {
+      "z": "(1.1 + 0.3j)",
+      "w": "(0.8 - 0.2j)",
+      "absolute_quadrature_error": "3.9528755657537313802e-46"
+    }
+  ],
+  "scope": "Scalar mixed-divisor diagnostic; not a physical OPE or associativity theorem."
+}

@@ -27,6 +27,11 @@ jobs:
           python scripts/verify_angular_recovery.py
           python scripts/verify_log_recovery.py
           python scripts/verify_resummation.py
+          python scripts/verify_radiative_example.py
+          python scripts/verify_branch_recovery.py
+          python scripts/verify_ordered_limits.py
+          python scripts/verify_framework_bridge.py
+          python scripts/verify_ward_controls.py
           python scripts/verify_scale_jets.py
           julia --startup-file=no julia/verify_exact.jl
           julia --startup-file=no julia/verify_log_jet.jl

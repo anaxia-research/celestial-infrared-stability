@@ -1,0 +1,45 @@
+\section{An exact diagnostic for ordered soft limits}
+\label{sec:ordered}
+Consecutive soft limits and shadow OPE prescriptions have established
+analyses \cite{shadowstress,chargebracket}. The following scalar example
+isolates a target-definition obstruction. It is not a physical scattering
+amplitude or a new resolution of a celestial operator algebra.
+
+For $x,y>0$, set
+\[
+ A(x,y)=\frac{e^{-x-y}}{y(x+y)},\qquad
+ b(x,y)=xyA(x,y)=\frac{x}{x+y}e^{-x-y}.
+\]
+The stripped kernel is positive and bounded. With
+$S_xA=\lim_{x\downarrow0}xA$ and the analogous operation in $y$,
+\[
+ S_y(S_xA)=0,\qquad S_x(S_yA)=1.
+\]
+Indeed, $S_xA=0$ for fixed $y>0$, whereas $S_yA=e^{-x}/x$.
+For $\Re z,\Re w>0$, its double Mellin transform is exactly
+\begin{equation}\label{eq:mixeddivisor}
+ G(z,w)=\int_0^\infty\!\int_0^\infty
+ x^{z-1}y^{w-1}b(x,y)\,dx\,dy
+ =\frac{\Gamma(z+1)\Gamma(w)}{z+w}.
+\end{equation}
+To prove the identity, substitute $u=x+y$ and $v=x/u$.
+The integral separates into
+$\Gamma(z+w)B(z+1,w)$, giving \eqref{eq:mixeddivisor}.
+The meromorphic continuation consequently satisfies
+\[
+ \Res_{w=0}\big(\Res_{z=0}G\big)=0,\qquad
+ \Res_{z=0}\big(\Res_{w=0}G\big)=1.
+\]
+For fixed $w\ne0$, $G$ is holomorphic at $z=0$; for fixed
+$z\ne0$, its residue at $w=0$ is $\Gamma(z+1)/z$.
+The mixed divisor $z+w=0$ prevents a common local Laurent expansion
+whose only polar divisors are the two coordinate axes.
+
+Any single number $q$ intended to approximate both ordered targets
+must satisfy $\max\{|q|,|q-1|\}\ge1/2$, even with exact transform
+data. Recovering an ordered pair has no such logical obstruction.
+Thus a reconstruction prescription must specify an order, a physical
+bracket, or assumptions that make the limits commute. Choosing an order
+does not establish associativity or identify the appropriate physical
+charge prescription. The cited charge-bracket construction supplies
+additional physical input in its stated tree-level setting.

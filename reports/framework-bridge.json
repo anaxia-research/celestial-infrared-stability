@@ -1,0 +1,235 @@
+{
+  "status": "passed",
+  "scope": "Classical kinematic Fourier--Mellin identity on a specified data line, not a new duality or a physical charge theorem.",
+  "precision_decimal_digits": 70,
+  "theorem_class": "complex-valued C_c^infinity((0,infinity)), support away from zero",
+  "quadrature_control": "f(omega)=exp(-omega); explicit C_plus/minus=1/(1 +/- i*u); valid bridge on 0<Re(s)<1, outside compact theorem class",
+  "joint_norm_identity": [
+    {
+      "nu": "-5.0",
+      "joint_squared_norm": "6.28318530717958647692528676656",
+      "error_from_2pi": "5.0711802841429589258051068029e-70"
+    },
+    {
+      "nu": "-1.0",
+      "joint_squared_norm": "6.28318530717958647692528676656",
+      "error_from_2pi": "7.24454326306136989400729543271e-71"
+    },
+    {
+      "nu": "0.0",
+      "joint_squared_norm": "6.28318530717958647692528676656",
+      "error_from_2pi": "7.24454326306136989400729543271e-71"
+    },
+    {
+      "nu": "1.0",
+      "joint_squared_norm": "6.28318530717958647692528676656",
+      "error_from_2pi": "7.24454326306136989400729543271e-71"
+    },
+    {
+      "nu": "5.0",
+      "joint_squared_norm": "6.28318530717958647692528676656",
+      "error_from_2pi": "5.0711802841429589258051068029e-70"
+    }
+  ],
+  "sharp_linear_noise_bound": [
+    {
+      "nu": "-5.0",
+      "joint_noise_norm": "0.03",
+      "observed_target_error": "0.011968268412042980338198381798",
+      "sharp_bound": "0.011968268412042980338198381798"
+    },
+    {
+      "nu": "-1.0",
+      "joint_noise_norm": "0.03",
+      "observed_target_error": "0.011968268412042980338198381798",
+      "sharp_bound": "0.011968268412042980338198381798"
+    },
+    {
+      "nu": "0.0",
+      "joint_noise_norm": "0.03",
+      "observed_target_error": "0.011968268412042980338198381798",
+      "sharp_bound": "0.011968268412042980338198381798"
+    },
+    {
+      "nu": "1.0",
+      "joint_noise_norm": "0.03",
+      "observed_target_error": "0.011968268412042980338198381798",
+      "sharp_bound": "0.011968268412042980338198381798"
+    },
+    {
+      "nu": "5.0",
+      "joint_noise_norm": "0.03",
+      "observed_target_error": "0.011968268412042980338198381798",
+      "sharp_bound": "0.011968268412042980338198381798"
+    }
+  ],
+  "one_channel_negative_controls": [
+    {
+      "channel": "positive time",
+      "nu": "-5.0",
+      "inverse_amplification": "2647230.97018365696130880404202",
+      "two_channel_amplification": "0.398942280401432677939946059934"
+    },
+    {
+      "channel": "negative time",
+      "nu": "-5.0",
+      "inverse_amplification": "0.398942280401437208131142156628",
+      "two_channel_amplification": "0.398942280401432677939946059934"
+    },
+    {
+      "channel": "positive time",
+      "nu": "-1.0",
+      "inverse_amplification": "9.24041659798521462463857174162",
+      "two_channel_amplification": "0.398942280401432677939946059934"
+    },
+    {
+      "channel": "negative time",
+      "nu": "-1.0",
+      "inverse_amplification": "0.399314607588537504904963461504",
+      "two_channel_amplification": "0.398942280401432677939946059934"
+    },
+    {
+      "channel": "positive time",
+      "nu": "0.0",
+      "inverse_amplification": "0.564189583547756286948079451561",
+      "two_channel_amplification": "0.398942280401432677939946059934"
+    },
+    {
+      "channel": "negative time",
+      "nu": "0.0",
+      "inverse_amplification": "0.564189583547756286948079451561",
+      "two_channel_amplification": "0.398942280401432677939946059934"
+    },
+    {
+      "channel": "positive time",
+      "nu": "1.0",
+      "inverse_amplification": "0.399314607588537504904963461504",
+      "two_channel_amplification": "0.398942280401432677939946059934"
+    },
+    {
+      "channel": "negative time",
+      "nu": "1.0",
+      "inverse_amplification": "9.24041659798521462463857174162",
+      "two_channel_amplification": "0.398942280401432677939946059934"
+    },
+    {
+      "channel": "positive time",
+      "nu": "5.0",
+      "inverse_amplification": "0.398942280401437208131142156628",
+      "two_channel_amplification": "0.398942280401432677939946059934"
+    },
+    {
+      "channel": "negative time",
+      "nu": "5.0",
+      "inverse_amplification": "2647230.97018365696130880404202",
+      "two_channel_amplification": "0.398942280401432677939946059934"
+    }
+  ],
+  "independent_quadratures": [
+    {
+      "nu": "-0.2",
+      "time_sign": 1,
+      "quadrature": {
+        "real": "1.34766149596901898969245479561",
+        "imag": "-1.34766149596901898969245479561"
+      },
+      "formula": {
+        "real": "1.34766149596901898969245479561",
+        "imag": "-1.34766149596901898969245479561"
+      },
+      "absolute_error": "2.04587453379548056824387066091e-37"
+    },
+    {
+      "nu": "-0.2",
+      "time_sign": -1,
+      "quadrature": {
+        "real": "2.52613229512349156582521117485",
+        "imag": "2.52613229512349156582521117485"
+      },
+      "formula": {
+        "real": "2.52613229512349156582521117485",
+        "imag": "2.52613229512349156582521117485"
+      },
+      "absolute_error": "2.05540172821376758134481738713e-37"
+    },
+    {
+      "nu": "0.0",
+      "time_sign": 1,
+      "quadrature": {
+        "real": "2.22144146907918312350794049503",
+        "imag": "-2.22144146907918312350794049503"
+      },
+      "formula": {
+        "real": "2.22144146907918312350794049503",
+        "imag": "-2.22144146907918312350794049503"
+      },
+      "absolute_error": "2.20699620540635234557295875569e-37"
+    },
+    {
+      "nu": "0.0",
+      "time_sign": -1,
+      "quadrature": {
+        "real": "2.22144146907918312350794049503",
+        "imag": "2.22144146907918312350794049503"
+      },
+      "formula": {
+        "real": "2.22144146907918312350794049503",
+        "imag": "2.22144146907918312350794049503"
+      },
+      "absolute_error": "2.20699620540635234557295875569e-37"
+    },
+    {
+      "nu": "0.2",
+      "time_sign": 1,
+      "quadrature": {
+        "real": "2.52613229512349156582521117485",
+        "imag": "-2.52613229512349156582521117485"
+      },
+      "formula": {
+        "real": "2.52613229512349156582521117485",
+        "imag": "-2.52613229512349156582521117485"
+      },
+      "absolute_error": "2.05540172821376758134481738713e-37"
+    },
+    {
+      "nu": "0.2",
+      "time_sign": -1,
+      "quadrature": {
+        "real": "1.34766149596901898969245479561",
+        "imag": "1.34766149596901898969245479561"
+      },
+      "formula": {
+        "real": "1.34766149596901898969245479561",
+        "imag": "1.34766149596901898969245479561"
+      },
+      "absolute_error": "2.04587453379548056824387066091e-37"
+    },
+    {
+      "nu": "2.0",
+      "time_sign": 1,
+      "quadrature": {
+        "real": "0.191993710597284846451595968786",
+        "imag": "-0.191993710597284846451595968786"
+      },
+      "formula": {
+        "real": "0.191993710597284846451595968786",
+        "imag": "-0.191993710597284846451595968786"
+      },
+      "absolute_error": "8.12038367261502820854003735176e-38"
+    },
+    {
+      "nu": "2.0",
+      "time_sign": -1,
+      "quadrature": {
+        "real": "0.000358537259388546654386313143022",
+        "imag": "0.000358537259388546654386313143022"
+      },
+      "formula": {
+        "real": "0.000358537259388546654386313143022",
+        "imag": "0.000358537259388546654386313143022"
+      },
+      "absolute_error": "8.01365063864155795687786634349e-39"
+    }
+  ],
+  "limitations": "Full-line two-time-channel availability is assumed. Re(q)=1/2 is not automatically the physical Re(Delta)=1 line. No quantum state space, Ward identity, OPE, bulk dual, or entanglement formula is established."
+}

@@ -1,0 +1,212 @@
+\section{An explicit Bondi-radiative example and a detector limitation}
+\label{sec:radiativeexample}
+We now connect one coefficient functional to a conventional gravitational
+soft contribution. This is a construction of smooth radiative data at
+future null infinity, with an explicit memory and finite gravitational
+flux. It is not a construction of a complete global scattering spacetime.
+We use the unit round sphere metric $q_{AB}$ and the convention
+$N_{AB}=\partial_u C_{AB}$ of \cite{pasterski}.
+
+For a smooth real supertranslation test $F$, the soft part obtained
+from equation~12 of \cite{pasterski} is
+\begin{equation}\label{eq:bondisoft}
+ Q_S[F]= -\frac{1}{16\pi G}\int_{\mathbb R\times S^2}
+ F D_A D_B N^{AB}\,du\,d\Omega.
+\end{equation}
+Let $X$ be the Hilbert space of square-integrable symmetric trace-free
+two-tensors on the sphere, with contractions taken using $q_{AB}$.
+Writing
+\[
+ E_{AB}[F]=D_A D_BF-\tfrac12q_{AB}\Delta F,
+ \qquad b_{AB}=\int_{\mathbb R}N_{AB}\,du,
+\]
+two integrations by parts on the closed sphere give
+\begin{equation}\label{eq:bondifunctional}
+ Q_S[F]=\ell_F(b),\qquad
+ \ell_F(b)=-\frac{\langle E[F],b\rangle_X}{16\pi G},
+ \qquad \|\ell_F\|=\frac{\|E[F]\|_X}{16\pi G}.
+\end{equation}
+For real $F$ this expression extends to a complex-linear functional on
+the complexified tensor space. The norm equality follows by taking
+$b$ aligned with $E[F]$ when this tensor is nonzero.
+
+\begin{proposition}[A normalized harmonic charge]\label{prop:harmoniccharge}
+Let $Y$ be a real scalar spherical harmonic with
+$-\Delta Y=\lambda_lY$, $\lambda_l=l(l+1)$, and $\|Y\|_2=1$.
+Then
+\begin{equation}\label{eq:stfnorm}
+ H_l:=\|E[Y]\|_X^2
+ =\frac{\lambda_l(\lambda_l-2)}2
+ =\frac{(l-1)l(l+1)(l+2)}2.
+\end{equation}
+For $l\ge2$, set $T_{AB}=E_{AB}[Y]/\sqrt{H_l}$ and $b=B T$,
+where $B$ is real. Then
+\begin{equation}\label{eq:harmoniccharge}
+ \|b\|_X=|B|,\qquad Q_S[Y]= -\frac{B\sqrt{H_l}}{16\pi G}.
+\end{equation}
+A tensor-recovery error $\varepsilon_b$ in $X$ therefore gives a charge
+error at most $\sqrt{H_l}\varepsilon_b/(16\pi G)$, with equality
+possible for an aligned error. For $l=0,1$, the soft functional vanishes.
+\end{proposition}
+\begin{proof}
+On the unit sphere $\operatorname{Ric}=q$. The integrated Bochner
+identity yields
+$\|D^2Y\|_2^2=\|\Delta Y\|_2^2-\|DY\|_2^2
+=\lambda_l^2-\lambda_l$.
+Removing the trace subtracts $\tfrac12\|\Delta Y\|_2^2$, proving
+\eqref{eq:stfnorm}. Equations~\eqref{eq:bondifunctional} and
+\eqref{eq:harmoniccharge} then give the assertions.
+\end{proof}
+
+There is no bound uniform over all $L^2$-normalized supertranslation
+tests: $\|\ell_{Y_{lm}}\|=\sqrt{H_l}/(16\pi G)
+\sim l^2/(16\pi G\sqrt2)$.
+Thus a small $L^2$ error in memory does not give a common error constant
+for arbitrarily fine angular tests. One may instead bound the tests
+in $H^2(S^2)$. With the spectral convention
+$\|F\|_{H^2}^2=\sum_{lm}(1+\lambda_l)^2|F_{lm}|^2$,
+\[
+ \|E[F]\|_X^2=\tfrac12\sum_{lm}\lambda_l(\lambda_l-2)|F_{lm}|^2
+ \le\tfrac12\|F\|_{H^2}^2.
+\]
+This gives a uniform charge-transfer bound on an $H^2$-bounded set
+of tests. Stronger angular regularity of the recovered memory is an
+alternative route to controlling more singular dual observables.
+
+\begin{proposition}[A finite-flux memory family]\label{prop:lorentziannews}
+Fix a smooth real electric-parity tensor $b$ and $\tau>0$. Define
+\begin{align}
+ g_\tau(u)&=\frac{\tau}{\pi(u^2+\tau^2)},\qquad
+ N_{AB}(u)=b_{AB}g_\tau(u),\label{eq:lorentziannews}\\
+ C_{AB}(u)&=C^-_{AB}+b_{AB}
+ \left[\frac12+\frac1\pi\arctan\frac u\tau\right].
+\end{align}
+Then $C^+-C^-=b$, and for the Fourier convention
+$\widehat N(\omega)=\int e^{i\omega u}N(u)\,du$,
+\begin{equation}\label{eq:newsfourier}
+ \widehat N(\omega)=b e^{-\tau|\omega|},\qquad
+ \int_{\mathbb R}\|N(u)\|_X^2du=\frac{\|b\|_X^2}{2\pi\tau}.
+\end{equation}
+In the convention with gravitational flux
+$(32\pi G)^{-1}\int\|N\|_X^2du$, its radiated gravitational energy is
+\begin{equation}\label{eq:radiatedenergy}
+ E_{\rm grav}=\frac{\|b\|_X^2}{64\pi^2G\tau}.
+\end{equation}
+The positive-frequency news $f_\tau(\omega)=b e^{-\tau\omega}$ obeys
+the $m=0$, $\alpha=1$ prior with $M=\tau\|b\|_X$ and
+\begin{equation}\label{eq:newsmellin}
+ G_\tau(z)=\Gamma(z)\tau^{-z}b,\qquad
+ Q_a(f_\tau)=\|G_\tau\|_{a,\infty}
+ =\Gamma(a)\tau^{-a}\|b\|_X,\quad a>0.
+\end{equation}
+Its Mellin residue at zero is $b$.
+\end{proposition}
+\begin{proof}
+The elementary Lorentzian integrals give $\int g_\tau=1$ and
+$\int g_\tau^2=1/(2\pi\tau)$. A contour integral at the pole
+$u=i\tau$ for $\omega>0$, and at $u=-i\tau$ for $\omega<0$,
+gives its Fourier transform; continuity gives the value at zero.
+The gamma integral proves \eqref{eq:newsmellin}. The integral
+triangle inequality bounds the whole vertical line by its zero-frequency
+value, where equality is attained. Finally,
+$\|f_\tau(\omega)-b\|_X
+\le\tau\|b\|_X\omega$ and
+$\|f'_\tau(0+)\|_X=\tau\|b\|_X$.
+\end{proof}
+
+For fixed nonzero $b$, letting $\tau\to\infty$ holds the memory and
+its nonzero harmonic soft charge fixed while both the Mellin-line norm
+and gravitational energy tend to zero. Thus a uniform upper bound on
+radiated gravitational energy alone does not restore stability on this
+radiative-data family. Its first frequency-derivative bound grows with
+$\tau$, so the uniform prior in the recovery theorem excludes this
+instability sequence. The theorem gives an actual bound for the
+specified Bondi soft contribution by multiplication with the norm in
+\eqref{eq:bondifunctional}.
+
+For an unknown duration and a known uniform derivative bound $M>0$,
+even this one-mode family has the same minimax exponent as the general
+$\alpha=1$ theorem. To see this, fix a normalized tensor $T$ as in
+Proposition~\ref{prop:harmoniccharge}. For $\eta>0$, take
+\[
+ \tau=\left(\frac{M\Gamma(a)}{\eta}\right)^{1/(a+1)},
+ \qquad b_{\pm}=\pm\frac{M}{\tau}T.
+\]
+Both profiles have derivative norm $M$ and Mellin-line norm $\eta$.
+The zero observation is compatible with both, so every estimator
+has worst-case memory error at least $M/\tau$ and charge error at least
+$\sqrt{H_l}M/(16\pi G\tau)$ for the corresponding harmonic test.
+The upper bound from Theorem~\ref{thm:vectorlogs} with $m=0$ gives the
+same order $M^{a/(a+1)}\eta^{1/(a+1)}$. In contrast, when the duration
+$\tau$ is known exactly and the pulse shape is assumed exact, the
+zero-frequency Mellin sample alone, $\tau^aY(0)/\Gamma(a)$, yields
+memory error at most $\tau^a\eta/\Gamma(a)$. The opposite pair
+$b_\pm=\pm\tau^a\eta T/\Gamma(a)$ shows this linear error bound is
+optimal for the known-duration family with unrestricted amplitude.
+
+\subsection{An idealized finite-time measurement}
+Suppose an idealized measurement directly samples the news on
+$[-U,U]$, with the pulse centred at zero. Its integrated memory is
+\begin{align}
+ b_U&=\frac2\pi\arctan(U/\tau)b,\label{eq:windowmemory}\\
+ \|b-b_U\|_X&=\left[1-\frac2\pi\arctan(U/\tau)\right]\|b\|_X,\\
+ \int_{-U}^U\|N(u)\|_X^2du
+ &=\frac{\|b\|_X^2}{\pi^2}
+ \left[\frac{U}{U^2+\tau^2}+\frac1\tau\arctan(U/\tau)\right].
+ \label{eq:windowflux}
+\end{align}
+For fixed $U$ the measured fraction tends to zero as $\tau\to\infty$,
+although the full memory remains $b$. If the additive measurement
+error has $L^2([-U,U];X)$ norm at most $\epsilon$, integrating the noisy
+record gives the explicit bound
+\begin{equation}\label{eq:windowchargeerror}
+ |\widehat Q_S[F]-Q_S[F]|
+ \le \frac{\|E[F]\|_X}{16\pi G}
+ \left\{\sqrt{2U}\epsilon+
+ \left[1-\frac2\pi\arctan(U/\tau)\right]\|b\|_X\right\}.
+\end{equation}
+The first term is Cauchy--Schwarz and is attained by a temporally
+constant error aligned with the angular test tensor. The second is
+the exact missing memory for this pulse. The formulas follow by direct
+integration; they do not derive a real instrument's strain response,
+angular response, noise law, or quantum dressing prescription.
+
+\subsection{Constraints, quantum states, and normalization}
+Electric parity, for example $b=B E[Y]/\sqrt{H_l}$, avoids assuming
+an arbitrary magnetic-parity vacuum transition. Even with this choice,
+the other Bondi data must obey the constraints. In the conventions of
+\cite{pasterski},
+\[
+ m_B^+-m_B^- =\tfrac14 D_A D_B b^{AB}-\int_{\mathbb R}T_{uu}\,du,
+\]
+where $T_{uu}$ includes the matter and quadratic gravitational terms.
+The endpoint mass aspects, hard flux, and memory therefore cannot
+all be prescribed independently. The construction above specifies
+admissible smooth finite-flux radiative data and its conventional soft
+functional; it proves neither a global Einstein evolution realizing
+all chosen endpoints nor antipodal matching or the full scattering
+Ward identity.
+
+There is also an infrared representation issue. For nonzero $b$,
+the ordinary zero-memory one-particle norm has an infrared contribution
+proportional to
+\[
+ \int_0^\infty\frac{\|\widehat N(\omega)\|_X^2}{\omega}\,d\omega
+ =\|b\|_X^2\int_0^\infty\frac{e^{-2\tau\omega}}{\omega}\,d\omega
+ =\infty.
+\]
+Finite radiated energy does not put a nonzero-memory coherent
+configuration into the ordinary zero-memory Fock representation;
+the issue and memory representations are discussed in \cite{irfock}.
+No dressed unitary scattering operator is supplied here.
+
+Finally, $f_\tau$ is Fourier-transformed news, not an unstripped
+graviton scattering amplitude. A conventional radiative mode expansion
+relates news to an extra factor of $\omega$ times a shear mode, with
+fixed polarization and gravitational normalization factors. If one
+defines the stripped model $A(\omega)=f_\tau(\omega)/\omega$,
+then $\Mell A(1+z)=G_\tau(z)$: the displaced line above is
+$\Re\Delta=1+a$, not the boundary contour through the leading
+soft pole. These distinctions delimit the explicit bridge established
+here. They leave the complete physical scattering, dressing, and
+all-orders questions open.
