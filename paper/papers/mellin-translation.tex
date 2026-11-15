@@ -1,0 +1,65 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,microtype,xcolor}
+\usepackage[colorlinks=true,linkcolor=teal!70!black,urlcolor=teal!70!black,citecolor=teal!70!black]{hyperref}
+\newtheorem{theorem}{Theorem}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\title{Time Translations and Finite Celestial Mellin Bands}
+\hypersetup{pdftitle={Time Translations and Finite Celestial Mellin Bands}}
+\author{\normalsize Deep Bhattacharjee, James Montgomery Lockwood, Tristan Romanov,\\
+\normalsize Ikailo John Sessford, Ushashi Bhattacharya, Sanjeevan Singha Roy}
+\date{Working research draft, 15 November 2026}
+\begin{document}
+\maketitle
+\begin{center}\small\color{teal!70!black}
+One unranked prospective author list supplied by the project lead.\\
+Coauthor review and approval remain pending.
+\end{center}
+\begin{abstract}
+We study exact frequency cutoffs on the celestial principal series
+for a positive-energy massless scalar. Every nonzero time translation
+sends each nonzero wave packet supported in a bounded Mellin band
+outside every bounded output band. On any fixed band of positive
+measure, the retained norm of a normalized packet can approach zero
+or one. Every nonzero exactly band-limited packet also has infinite
+mean physical energy. The statements concern one-particle kinematics.
+\end{abstract}
+
+\section{Introduction}
+The four-dimensional conformal basis expresses the massless
+one-particle energy variable by a Mellin transform \cite{basis}.
+Translations act as multiplication by a phase in the energy
+representation. Their formal action as shifts of the Mellin weight is
+part of the Poincar\'e constraints on celestial amplitudes
+\cite{lawzlotnikov}. The following result quantifies how much norm is
+lost when one represents the state using only a fixed bounded band
+of Mellin frequencies and then applies an ordinary time translation.
+
+Both limits for retained norm come from shifting the same
+log-energy packet. Such a shift preserves its Mellin support while
+changing its physical energies. A separate analytic argument applies
+to every nonzero packet and explains why exact hard frequency
+cutoffs cannot give finite mean energy.
+
+\input{paper/mellin-translation.tex}
+
+\section*{Reproducibility}
+The repository includes checks of the finite-band example and a
+quadrature of its Mellin amplitude. From the repository root they run
+with \texttt{python scripts/verify\_mellin\_translation.py}.
+\href{https://github.com/anaxia-research/celestial-infrared-stability}{Repository and source}.
+
+\begin{thebibliography}{9}
+\bibitem{basis} S. Pasterski and S.-H. Shao,
+\emph{A conformal basis for flat space amplitudes},
+Phys. Rev. D 96 (2017) 065022,
+\href{https://arxiv.org/abs/1705.01027}{arXiv:1705.01027}.
+\bibitem{lawzlotnikov} Y. T. A. Law and M. Zlotnikov,
+\emph{Poincar\'e constraints on celestial amplitudes},
+JHEP 03 (2020) 085,
+\href{https://arxiv.org/abs/1910.04356}{arXiv:1910.04356}.
+\end{thebibliography}
+\end{document}

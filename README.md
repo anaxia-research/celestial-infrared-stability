@@ -8,6 +8,16 @@ Working research draft with one unranked prospective author list supplied by the
 
 [Read the paper](paper/manuscript.pdf) · [Reproduce the calculations](#reproduce) · [Sources and originality review](RELATED-WORK.md) · [Proof status and open targets](PROOF-STATUS.md)
 
+## Standalone working papers
+
+| Topic | Files |
+| --- | --- |
+| Angular inversion of the leading massive QED charge | [PDF](paper/papers/massive-angular.pdf) · [LaTeX](paper/papers/massive-angular.tex) |
+| Time translations and finite celestial Mellin bands | [PDF](paper/papers/mellin-translation.pdf) · [LaTeX](paper/papers/mellin-translation.tex) |
+| Ordered-scale estimates for the proposed quantum leading logarithm | [PDF](paper/papers/ordered-scales.pdf) · [LaTeX](paper/papers/ordered-scales.tex) |
+
+The standalone sources compile from the repository root and use the same theorem sections as the combined manuscript.
+
 ## Gravitational memory, resummed data, and ordered limits
 
 The current draft derives the conventional Bondi soft contribution for a smooth finite-flux news family. At fixed memory, increasing pulse duration drives the displaced Mellin data, radiated energy, and finite-window news signal to zero. The proof gives exact window errors and matching recovery exponents when the duration is unknown but the frequency derivative is uniformly bounded. [Bondi proof](paper/radiative-example.tex)
