@@ -42,6 +42,8 @@ The new estimates do not close all problems of celestial holography, Sabrina Pas
 
 ## Open targets with concrete completion criteria
 
+The [massive angular theorem](paper/massive-angular.tex) proves two-sided spectral bounds and a matching minimax recovery rate for the leading massive QED angular kernel at a known speed. The [translation theorem](paper/mellin-translation.tex) proves sharp band leakage for physical time translations on the massless scalar principal series. Both are written analytical proofs. The massive Ward tower, interacting higher-loop amplitudes, and a complete holographic duality are still open.
+
 | Target | What a proof would have to supply | Current status |
 | --- | --- | --- |
 | A physical scattering realization | A family satisfying the relevant unitarity, crossing, gauge, and kinematic constraints, plus the required Mellin bounds | Open. Scalar positivity and complete monotonicity do not establish these conditions |

@@ -28,7 +28,7 @@ Prepared and updated 15 November 2026 from the specific primary-source versions 
 
 **Later constraint:** An October 2026 Newtonian calculation gives a three-particle counterexample to a prior full multiparticle gravitational-tail conjecture; its relativistic replacement remains conjectural. This is not automatically a refutation of a symmetry-projected tower. [2610.07134v1, §4.3, equations 4.25–4.27; §5](https://arxiv.org/html/2610.07134v1)
 
-**Project progress:** We replay the nonzero transverse-traceless discrepancy in the attempt ledger. No higher-loop amplitude or massive celestial Ward identity is computed here.
+**Project progress:** We replay the nonzero transverse-traceless discrepancy in the attempt ledger. The [leading angular inverse theorem](paper/massive-angular.tex) uses the established massive QED Ward kernel and proves the sharp logarithmic recovery rate for a signed angular density at one known speed. Two unconstrained speeds make the inverse map noninjective. The [ordered-scale criterion](QUANTUM-LOOP-CRITERION.md) states a sufficient estimate for testing the symmetry-projected two-loop coefficient. The higher-logarithmic massive Ward tower and the interacting quantum calculation remain open.
 
 ## 5. Detector scales, dressing and the soft limit
 
@@ -56,7 +56,7 @@ The newer gravity construction explicitly flags a regulated-Cauchy-slice issue b
 
 **Recent restricted result:** Caminiti–Pasterski relate a swing length to half a mutual information for a special state class, while stressing the ordinary RT flat-limit obstruction and a broader inner-horizon interpretation problem. This is a specific development, not a complete flat-space duality. [2611.15854v1, §1, equations 1.1–1.2; §§2.2–3](https://arxiv.org/html/2611.15854v1)
 
-**Project progress:** [paper/framework-bridge.tex](paper/framework-bridge.tex) proves a classical two-time-channel Fourier–Mellin identity with a sharp noise norm on a specified data line and a one-channel obstruction. It does not construct a boundary theory, OPE, entanglement observable, or full bulk/boundary duality.
+**Project progress:** The [two-time-channel bridge](paper/framework-bridge.tex) gives a sharp noise norm on its specified data line. The [translation theorem](paper/mellin-translation.tex) treats the physical one-particle principal series and shows that any fixed finite band can lose arbitrarily close to the entire norm under a nonzero time translation. A dynamical boundary theory and the full bulk/boundary duality remain open.
 
 ## Next reviewable target
 

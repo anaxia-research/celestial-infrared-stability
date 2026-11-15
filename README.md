@@ -16,6 +16,8 @@ A separate theorem recovers the amplitude of a prescribed resummed branch of exp
 
 A double Mellin example gives two different ordered residues. A two-channel retarded-time calculation gives an exact inverse noise norm on the line with real Mellin weight $1/2$. The former concerns a scalar model and the latter concerns a change of transform representation. [Ordered limits](paper/ordered-limits.tex) · [Fourier–Mellin identity](paper/framework-bridge.tex)
 
+For massive QED at leading order, we prove a sharp logarithmic rate for reconstructing signed angular charge data at one known speed. On the massless scalar principal series, we prove that a time translation can push arbitrarily close to the entire norm of a unit wave packet out of a fixed Mellin band. [Massive Ward kernel](paper/massive-angular.tex) · [Mellin band leakage](paper/mellin-translation.tex)
+
 The [research ledger](RESEARCH-ATTEMPTS.md) records the outcomes across eight topics, including recent results from the cited researchers and remaining physical questions.
 
 ## Angular soft data and logarithmic modes
@@ -104,6 +106,8 @@ python scripts/verify_radiative_example.py
 python scripts/verify_branch_recovery.py
 python scripts/verify_ordered_limits.py
 python scripts/verify_framework_bridge.py
+python scripts/verify_massive_angular.py
+python scripts/verify_mellin_translation.py
 python scripts/verify_ward_controls.py
 python scripts/verify_scale_jets.py
 julia --startup-file=no julia/verify_exact.jl

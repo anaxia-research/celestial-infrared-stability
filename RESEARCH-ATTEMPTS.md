@@ -43,7 +43,7 @@ Delta A_TT = -(25/8)K diag(1,-1,0),
 
 The [exact projection check](reports/ward-controls.json) reproduces this nonzero discrepancy from the published coefficients. The source's relativistic replacement in §5 remains conjectural. A failure of a full waveform ansatz does not automatically refute a symmetry-projected formula: terms annihilated by the angular Ward operator must be compared explicitly.
 
-**Not completed:** A two-loop quantum calculation or a massive celestial Ward construction. Assuming universality or exponentiation would skip the question being tested.
+**Next check:** The [ordered-scale criterion](QUANTUM-LOOP-CRITERION.md) proves when integrable corrections between successive virtual scales can contribute at most one logarithm. The physical kernel representation and bound must be derived from the regulated amplitude. The [massive angular inverse](paper/massive-angular.tex) quantifies recovery from the established leading kernel. The higher-log massive Ward construction and the two-loop quantum calculation remain open.
 
 ## 5. Account for a finite observation time
 

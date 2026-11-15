@@ -1,0 +1,144 @@
+\section{Finite Mellin bands under time translation}
+\label{sec:mellintranslation}
+Consider a positive-energy massless scalar in four dimensions with
+one-particle norm
+\[
+ \|f\|^2=\frac12\int_{S^2}\int_0^\infty |f(\omega,n)|^2\,
+                   \omega\,d\omega\,dn .
+\]
+Take energies in a fixed unit, set $x=\log\omega$, and write
+$g(x,n)=e^x f(e^x,n)/\sqrt 2$. The map $f\mapsto g$ is unitary to
+$L^2(dx\,dn)$, and the unitary Fourier transform in $x$ gives the
+Mellin representation on the principal line, with weight
+$\Delta=1-i\nu$ for the sign convention $e^{-i\nu x}$.
+This is the normalized wave-packet version of the massless conformal
+basis \cite{basis}. Ordinary time translation acts by
+\[
+ (U_\tau g)(x,n)=e^{i\tau e^x}g(x,n).
+\]
+Here the sign of $\tau$ specifies our translation convention. The
+factor $\omega$ in the generator also gives the familiar formal
+unit shift of the Mellin weight \cite{lawzlotnikov}.
+
+\begin{theorem}[Translation and finite-band retention]
+\label{thm:mellintranslation}
+Let $B\subset\mathbb R$ be bounded and measurable with positive
+measure, and let $P_B$ be the orthogonal projector onto Mellin
+frequencies in $B$. For each $\tau\ne0$,
+\[
+ \inf_{\substack{g=P_Bg\\ \|g\|=1}}\|P_BU_\tau g\|=0,
+ \qquad
+ \sup_{\substack{g=P_Bg\\ \|g\|=1}}\|P_BU_\tau g\|=1.
+\]
+For every nonzero $g$ in this band, $U_\tau g$ has nonzero norm
+outside every bounded Mellin band. Also, for any $p>0$, every
+nonzero $g$ in the band has
+\[
+ \int_{S^2}\int_{\mathbb R}e^{2px}|g(x,n)|^2\,dx\,dn=\infty.
+\]
+\end{theorem}
+\begin{proof}
+For the two extremal statements it suffices to choose a unit radial
+profile $h$ with Fourier support in $B$ and a unit angular factor.
+Write $h_R(x)=h(x-R)$, which preserves the Mellin support and norm.
+After recentering $x$ by $R$, the retained norm for $U_\tau h_R$
+is the norm of $\mathbf1_B\mathcal F(e^{i\tau e^R e^x}h)$.
+For $R\to-\infty$, dominated convergence in $L^2(dx)$ gives
+$\|(e^{i\tau e^R e^x}-1)h\|\to 0$, proving the supremum.
+For $R\to+\infty$, first take an auxiliary profile $k\in C_c^\infty(\mathbb R)$.
+Its transformed translated value is
+\[
+ \mathcal F(e^{i\tau e^R e^x}k)(\nu)
+ =\frac1{\sqrt{2\pi}}\int_0^\infty
+         e^{i\tau e^R y}k(\log y)y^{-i\nu-1}\,dy.
+\]
+The integrand with the oscillatory factor removed is in $L^1(dy)$.
+The Riemann--Lebesgue lemma gives pointwise convergence to zero,
+and the uniform bound $\|k\|_1/\sqrt{2\pi}$ together with
+$|B|<\infty$ gives convergence in $L^2(B)$. Approximating $h$ by
+such $k$ in $L^2$ extends the conclusion since the translation,
+Fourier transform, and restriction have operator norms at most
+one. This proves the infimum.
+
+We use the following log-integrability fact for a nonzero
+band-limited radial profile $h$. Write
+\[
+ h(z)=\frac1{\sqrt{2\pi}}\int_a^b \widehat h(\nu)e^{i\nu z}\,d\nu
+\]
+for some finite $a,b$. The integral defines an entire
+representative since $\widehat h\in L^1([a,b])$.
+For every real $y$, the function $F(z)=e^{-iaz}h(z+iy)$ is
+bounded on the upper half-plane: in the integral its modulus
+has the factor $e^{-(\nu-a)\Im z-\nu y}$. Choose
+$z_0=x_0+iv_0$, $v_0>0$, with $F(z_0)\ne0$, and an upper
+bound $M$ for $|F|$. Pull back to the unit disk by a
+M\"obius map taking zero to $z_0$. The subharmonic mean-value
+inequality for $\log|F|$ bounds the circular means of
+$\log(M/|F|)$ by $\log(M/|F(z_0)|)$. Fatou's lemma,
+continuity at every finite boundary point, and the Poisson
+density for this map then give
+\[
+ \int_{\mathbb R}\log\frac{M}{|h(x+iy)|}\,
+      \frac{v_0\,dx}{\pi((x-x_0)^2+v_0^2)}<\infty.
+ \tag{*}\label{eq:bandlogintegrability}
+\]
+In particular, a bound $|h(x+iy)|\le C\exp(-ce^x)$
+for all sufficiently large $x$, with $c>0$, is impossible.
+
+If both $h$ and $U_\tau h$ belonged to bounded bands, both would
+extend to entire functions, and their real-axis identity
+would give $(U_\tau h)(z)=e^{i\tau e^z}h(z)$ everywhere.
+Take $y=-\operatorname{sgn}(\tau)\pi/2$. On the line
+$z=x+iy$ the entire representative of $U_\tau h$ is
+bounded, because its compactly supported Fourier transform
+is integrable. The multiplying factor has modulus
+$\exp(|\tau|e^x)$ there, contrary to
+\eqref{eq:bandlogintegrability}.
+
+Finally, suppose $\int e^{2px}|h(x)|^2dx<\infty$. For real
+$x$ set $u(x)=e^{px}|h(x)|$. On $x\ge0$,
+\[
+ \log\frac M{|h(x)|}\ \ge\ \log M+px-\log^+u(x).
+\]
+Since $\log^+u\le u^2$ and the Poisson density is bounded,
+the last term is integrable with that weight. The term $px$
+has divergent integral against the same density, again
+contrary to \eqref{eq:bandlogintegrability}. For the two
+contradictions with angular dependence, take a nonzero scalar
+angular coefficient of $g$ in an orthonormal basis of $L^2(S^2)$.
+Taking this coefficient commutes with $U_\tau$ and $P_B$, and
+a finite weighted norm of $g$ would give a finite weighted
+norm for each coefficient.
+\end{proof}
+
+For a unitary operator $U$ and an orthogonal projector $P$,
+the exact norm deficit of its compression on $\operatorname{ran}P$ is
+\[
+ I_{\operatorname{ran}P}-(PUP)^*(PUP)
+ =\big((I-P)UP\big)^*\big((I-P)UP\big).
+\]
+The two extremal cases above give operator norm one for both
+the retained component $P_BU_\tau P_B$ and the discarded
+component $(I-P_B)U_\tau P_B$. In energy terms, the moment
+statement includes infinite mean energy for hard-banded
+nonzero wave packets by taking $p=1/2$. These constraints
+apply to an exact finite Mellin band in one-particle scalar
+kinematics. Interacting infrared scattering and construction
+of an independent boundary theory require separate results.
+
+A numerical control can use the unit profile
+$h_\lambda(x)=\sqrt{2\lambda}\exp(x/2-\lambda e^x)$, $\lambda>0$.
+The gamma integral and $|\Gamma(\tfrac12+i\nu)|^2=\pi/\cosh(\pi\nu)$ give
+\[
+ |\mathcal F(U_\tau h_\lambda)(\nu)|^2
+ = \frac{\lambda}{\sqrt{\lambda^2+\tau^2}}\,
+   \frac{\exp(2\nu\arctan(\tau/\lambda))}{\cosh(\pi\nu)} .
+\]
+For $B=[-b,b]$ the initial squared norm in the band is
+$q_b=2\arctan(\sinh(\pi b))/\pi$. The normalized band projection
+of $h_\lambda$ differs from $h_\lambda$ in norm by
+$\sqrt{2(1-\sqrt{q_b})}$. Contractivity of $P_BU_\tau$ then
+bounds the projected packet's retained norm using the explicit
+density, with the same error. For $b=8$ and $\tau=1$, the
+numerical controls give a retained norm above $0.99999$ for
+$\lambda=10^6$ and below $0.00006$ for $\lambda=10^{-10}$.

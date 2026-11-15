@@ -1,0 +1,116 @@
+\section{Angular inversion of the leading massive QED charge}
+\label{sec:massive-inverse}
+
+Campiglia and Laddha's leading massive QED Ward identity uses the
+hyperboloid extension of the sphere gauge parameter \cite{massive-qed}.
+We start from its geometric kernel and analyze what angular charge data
+can recover. This section assumes a prescribed signed hard-charge
+density and a single known speed. It does not derive a higher
+logarithmic Ward identity.
+
+Use the round unit sphere with area $4\pi$ and Laplacian
+$\Delta_{S^2}=\operatorname{div}\nabla$. For a velocity $v=\beta u$ with
+$u\in S^2$, $0<\beta<1$, the tangent soft factor in signature $(-+++)$
+is $\partial_A\log(1-\beta u\cdot n)$: it is the ratio
+$p\cdot (0,\partial_A n)/[p\cdot (1,n)]$, with $p=E(1,\beta u)$.
+Differentiating in $t=u\cdot n$ gives
+\[
+ \Delta_{S^2}\log(1-\beta t)
+ =\frac{1-\beta^2}{(1-\beta t)^2}-1.
+\]
+Thus in units where the hard charge multiplies the normalized angular
+kernel, the sphere divergence divided by $4\pi$ is
+$K_\beta(t)-1/(4\pi)$, with
+\[
+ K_\beta(t)=\frac{1-\beta^2}{4\pi(1-\beta t)^2}.
+\]
+This is also the hyperboloid kernel
+$[4\pi (Y^0-\mathbf Y\cdot n)^2]^{-1}$ for
+$Y=(1,\beta u)/\sqrt{1-\beta^2}$. Direct integration gives
+$\int_{S^2} K_\beta(u\cdot n)\,dn=1$. Summing the signed contributions
+cancels the constant term when the total signed charge is zero. Equivalently,
+the result is restricted to angular modes of positive degree.
+
+Define $(T_\beta\rho)(n)=\int_{S^2}K_\beta(u\cdot n)\rho(u)\,du$.
+Let $Y_{\ell j}$ be a real orthonormal spherical harmonic basis and use
+the norm $\|\rho\|_{H^s}^2=\sum_{\ell,j}
+ (1+\ell(\ell+1))^s|\rho_{\ell j}|^2$.
+
+\begin{theorem}[Sharp logarithmic recovery at a known speed]
+\label{thm:massive-inverse}
+Put $r=\beta/(1+\sqrt{1-\beta^2})\in(0,1)$.
+For constants $0<c_\beta\le C_\beta<\infty$, the eigenvalue $\lambda_\ell$
+of $T_\beta$ on degree $\ell$ satisfies
+\[
+ c_\beta\sqrt{\ell+1}\,r^\ell
+ \ \le\ \lambda_\ell\ \le\
+ C_\beta\sqrt{\ell+1}\,r^\ell\qquad(\ell\ge0).
+\]
+More precisely, $\lambda_\ell/(\sqrt{\ell}\,r^\ell)$ tends to
+$\sqrt{\pi(1-r^2)}/2$ as $\ell\to\infty$.
+In particular, the exact data determine $\rho$. For $s>0$, let
+$\mathcal D=\{\rho:\int\rho=0,\ \|\rho\|_{H^s}\le M\}$ and observe
+$y=T_\beta\rho+e$ with $\|e\|_2\le\eta$. As $\eta/M\to0$, the infimum
+over all reconstruction rules of the worst-case $L^2$ error on
+$\mathcal D$ is bounded above and below by positive multiples of
+$M[\log(M/\eta)]^{-s}$ depending only on $\beta,s$.
+\end{theorem}
+
+\begin{proof}
+By Funk--Hecke, $\lambda_\ell=(1-\beta^2)\int_{-1}^1
+ P_\ell(t)(1-\beta t)^{-2}\,dt/2$ for $P_\ell(1)=1$.
+Rodrigues' formula and $\ell$ integrations by parts give
+\[
+ \lambda_\ell=(\ell+1)\int_{-1}^1 h(t)^\ell\,w(t)\,dt,\quad
+ h(t)=\frac{\beta(1-t^2)}{2(1-\beta t)},\quad
+ w(t)=\frac{1-\beta^2}{2(1-\beta t)^2}.
+\]
+The boundary terms vanish since $(t^2-1)^\ell$ and its derivatives of
+order less than $\ell$ vanish at both endpoints. The differentiated
+kernel is $(\ell+1)!\,\beta^\ell(1-\beta t)^{-\ell-2}$.
+The weight $w$ has integral one and is bounded above and below by
+positive constants. Since $\beta=2r/(1+r^2)$,
+\[
+ 1-\frac{h(t)}r=\frac{(t-r)^2}{1+r^2-2rt}.
+\]
+For $\ell\ge1$, $(h/r)^\ell\le
+\exp[-\ell(t-r)^2/(1+r)^2]$. The Gaussian integral on the real line gives
+the upper bound. For the lower bound, restrict to
+$|t-r|\le(1-r)/(2\sqrt{\ell+1})$ inside $[-1,1]$. There
+$(h/r)^\ell\ge (1-1/[4(\ell+1)])^\ell\ge 3/4$ by Bernoulli's
+inequality. The interval length gives the lower bound. Finally
+$\lambda_0=1$.
+
+To obtain the constant, set $t=r+y/\sqrt{\ell}$ in the positive
+integral and extend its rescaled integrand by zero outside the
+rescaled interval. The expression $(h(t)/r)^\ell$ tends pointwise to
+$\exp(-y^2/(1-r^2))$, and $w(r)=1/2$. The same Gaussian upper
+bound and boundedness of $w$ justify dominated convergence.
+
+Invert the modes $1\le\ell\le L$ and set the others to zero.
+The squared-error contributions are on disjoint angular modes. In
+particular the total error is at most
+\[
+ M(1+(L+1)(L+2))^{-s/2}+c_\beta^{-1}\eta r^{-L}.
+\]
+Take $L=\lfloor \log(M/\eta)/(2|\log r|)\rfloor$ for $\eta/M$
+sufficiently small. The first term gives the logarithmic bound and
+the second is at most $c_\beta^{-1}\sqrt{M\eta}$.
+For the lower bound set
+$\ell=\lceil 2\log(M/\eta)/|\log r|\rceil$ and take the two profiles
+$\rho_\pm=\pm M(1+\ell(\ell+1))^{-s/2}Y_{\ell j}$. Both satisfy the
+prior. Their data norms are at most
+$C_\beta M\sqrt{\ell+1}\,(\eta/M)^2\le\eta$ for small $\eta/M$.
+Zero is then a common possible observation. The triangle inequality
+forces error at least $\|\rho_+\|_2$ for one of them, giving the lower bound.
+\end{proof}
+
+If speed mixtures are allowed as arbitrary densities without
+additional observations, injectivity already fails for two distinct
+speeds: a harmonic of positive degree carried at speed $\beta_1$ and
+the same harmonic multiplied by $\lambda_\ell(\beta_1)/\lambda_\ell(\beta_2)$
+at speed $\beta_2$ give identical data. Both can be scaled to meet any
+positive Sobolev bound. This is a limitation of an angular observation
+on signed densities. It neither asserts a new scattering identity nor
+rules out recovery from extra energy-resolved data or a more restrictive
+model of the hard particles.

@@ -1,0 +1,4 @@
+Exact symbolic sphere-divergence identity: passed.
+beta=0.25: two formulas agree for degrees 0 to 12; normalized degrees 10, 40, 160: 0.890041735, 0.88199429, 0.879798749; asymptotic constant: 0.879049005
+beta=0.6: two formulas agree for degrees 0 to 12; normalized degrees 10, 40, 160: 0.851935347, 0.83998379, 0.836676895; asymptotic constant: 0.835542758
+beta=0.9: two formulas agree for degrees 0 to 12; normalized degrees 10, 40, 160: 0.727019236, 0.700671552, 0.693146189; asymptotic constant: 0.690538297
