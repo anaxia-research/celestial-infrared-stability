@@ -24,9 +24,12 @@ Files
 CelestialIRPaper.pdf  - 43 pages
 MDPICelestialIRTeX.zip - one main.tex (\documentclass on line 1, bibliography inlined) + figures/*.png; compiles with pdflatex, 0 errors, 0 undefined references, 0 overfull boxes.
 
-Code: https://github.com/anaxia-research/celestial-infrared-stability (Lean 4 + Julia; PR #1). No release, no DOI; the paper cites the GitHub URL only.
+Code: https://github.com/anaxia-research/celestial-infrared-stability (Lean 4 + Julia). No release, no DOI; the paper cites the GitHub URL only.
 
 To confirm before submission
 ----------------------------
-- Author contributions: the paper states that U.B. checked arguments and references and that J.M.L., T.R., I.J.S. and S.S.R. read the manuscript. These co-author roles were not confirmed by them. Edit if needed.
 - The repository's main branch still carries the earlier draft's paper/ folder (manuscript PDF and TeX). Remove it before submission if the repo should hold code only.
+
+Revision 16 Nov 2026 (20:30 UTC)
+--------------------------------
+Fixed: Thm 14.9 domination split at 1/Lambda (R1); 0<gamma_0<gamma_1<1 in Sec 8 and local two-point wording (R2); Fourier-uniqueness weight omega^{p+a} (R3); full-QED reduction stated as conditional (R4, Secs 13 and 18); Lean scope (integer jets) and Julia counts 14,155 / five scripts (R6); Table 1 now before the References (E2). Author contributions section removed. Previous package in superseded-16nov-0926/.
