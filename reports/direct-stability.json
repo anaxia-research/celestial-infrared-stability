@@ -1,6 +1,6 @@
 {
   "schema": "direct-mellin-stability-controls-v1",
-  "generated_utc": "2026-11-14T22:43:27.744484+00:00",
+  "generated_utc": "2026-11-16T08:03:31.560789+00:00",
   "working_decimal_digits": 45,
   "formal_proof": false,
   "boundary_norm_quadrature": [

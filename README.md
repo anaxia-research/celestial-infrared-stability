@@ -122,9 +122,15 @@ python scripts/verify_ward_controls.py
 python scripts/verify_scale_jets.py
 julia --startup-file=no julia/verify_exact.jl
 julia --startup-file=no julia/verify_log_jet.jl
+julia --startup-file=no julia/verify_finite_identities.jl
+julia --startup-file=no julia/verify_sampling.jl
+julia --startup-file=no julia/verify_exponent.jl
+julia --startup-file=no julia/verify_projection.jl
+julia --startup-file=no julia/verify_kinked_line.jl
 python scripts/make_figure.py
 python scripts/make_stability_figure.py
 lean lean/ScaleJets.lean
+lean lean/CelestialIR.lean
 ```
 
 Build the manuscript with a TeX installation containing the standard AMS and graphics packages.
@@ -136,7 +142,7 @@ pdflatex -interaction=nonstopmode -halt-on-error -output-directory=paper paper/m
 
 The written proofs establish the infinite statements. The scripts replay exact finite identities and high-precision controls, with their scope recorded in `reports/`. The independent standard-library Julia replay checks the full interpolation and inverse-smoothing algebra with arbitrary-precision rational arithmetic; CI preserves the generated verification records.
 
-Lean 4.34.1 checks the symbolic integer double-pole group law, inverse, reference-scale cancellation, and an explicit counterexample to ordinary residue invariance. Its module imports `Std`. The analytical Mellin, distributional boundary, and minimax results have written proofs in the manuscript and are not Lean formalizations.
+Lean 4.34.1 checks the symbolic integer double-pole group law, inverse, reference-scale cancellation, and an explicit counterexample to ordinary residue invariance. Its module imports `Std`. `lean/CelestialIR.lean` (also `Std` only, no `sorry`, 61 audited theorems) adds the general pole-jet shear for jets of every length, the forward-difference identity for every degree, the Bondi harmonic norm identity and its $H^2$ domination, the two expansions behind the ordered-limit residues, the discrete simplex gap identity, and the Chebyshev leading coefficient for every degree with exact weights up to degree four. The new Julia scripts check the discrete-sampling bounds, the unknown-exponent estimator and its lower-bound pairs, the contact-term projection lemma and the kinked-line model, and replay the finite identities in exact rational arithmetic. The analytical Mellin, distributional boundary, and minimax results have written proofs in the manuscript and are not Lean formalizations.
 
 ## Authors and review
 
