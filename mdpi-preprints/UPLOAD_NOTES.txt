@@ -28,7 +28,7 @@ Code: https://github.com/anaxia-research/celestial-infrared-stability (Lean 4 + 
 
 To confirm before submission
 ----------------------------
-- The repository's main branch still carries the earlier draft's paper/ folder (manuscript PDF and TeX). Remove it before submission if the repo should hold code only.
+- Nothing outstanding in the repository: the earlier draft's paper/ folder was removed on 16 Nov 2026.
 
 Revision 16 Nov 2026 (20:30 UTC)
 --------------------------------

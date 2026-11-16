@@ -1,12 +1,5 @@
 __pycache__/
 *.py[cod]
-paper/*.aux
-paper/*.log
-paper/*.out
-paper/papers/*.aux
-paper/papers/*.log
-paper/papers/*.out
-paper/build-console.txt
 tmp/
 .venv/
 .lake/

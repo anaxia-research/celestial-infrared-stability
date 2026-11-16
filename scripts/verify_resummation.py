@@ -2,7 +2,7 @@
 
 These scalar Laplace--Mellin kernels illustrate established analytic structures.
 They are not computed scattering amplitudes or proofs about all physical loops.
-Analytic identities and asymptotic arguments are given in paper/angular-logs.tex;
+Analytic identities and asymptotic arguments are given in the paper (mdpi-preprints/CelestialIRPaper.pdf);
 this finite numerical replay checks formula implementations and negative controls.
 """
 

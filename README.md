@@ -6,27 +6,17 @@ Deep Bhattacharjee · James Montgomery Lockwood · Tristan Romanov · Ikailo Joh
 
 Working research draft with one unranked prospective author list supplied by the project lead. Coauthor review and approval remain pending.
 
-[Read the paper](paper/manuscript.pdf) · [Reproduce the calculations](#reproduce) · [Sources and originality review](RELATED-WORK.md) · [Proof status and open targets](PROOF-STATUS.md)
-
-## Standalone working papers
-
-| Topic | Files |
-| --- | --- |
-| Angular inversion of the leading massive QED charge | [PDF](paper/papers/massive-angular.pdf) · [LaTeX](paper/papers/massive-angular.tex) |
-| Time translations and finite celestial Mellin bands | [PDF](paper/papers/mellin-translation.pdf) · [LaTeX](paper/papers/mellin-translation.tex) |
-| Ordered-scale estimates for the proposed quantum leading logarithm | [PDF](paper/papers/ordered-scales.pdf) · [LaTeX](paper/papers/ordered-scales.tex) |
-
-The standalone sources compile from the repository root and use the same theorem sections as the combined manuscript.
+[Read the paper](mdpi-preprints/CelestialIRPaper.pdf) · [Reproduce the calculations](#reproduce) · [Sources and originality review](RELATED-WORK.md) · [Proof status and open targets](PROOF-STATUS.md)
 
 ## Gravitational memory, resummed data, and ordered limits
 
-The current draft derives the conventional Bondi soft contribution for a smooth finite-flux news family. At fixed memory, increasing pulse duration drives the displaced Mellin data, radiated energy, and finite-window news signal to zero. The proof gives exact window errors and matching recovery exponents when the duration is unknown but the frequency derivative is uniformly bounded. [Bondi proof](paper/radiative-example.tex)
+The current draft derives the conventional Bondi soft contribution for a smooth finite-flux news family. At fixed memory, increasing pulse duration drives the displaced Mellin data, radiated energy, and finite-window news signal to zero. The proof gives exact window errors and matching recovery exponents when the duration is unknown but the frequency derivative is uniformly bounded. [Bondi proof](mdpi-preprints/CelestialIRPaper.pdf)
 
-A separate theorem recovers the amplitude of a prescribed resummed branch of exponent $\gamma$, with matching small-noise error order `M^(a/(a+alpha)) eta^(alpha/(a+alpha)) [log(M/eta)]^gamma`. The template parameters are known and the remainder obeys a global power bound. [Branch recovery proof](paper/branch-recovery.tex)
+A separate theorem recovers the amplitude of a prescribed resummed branch of exponent $\gamma$, with matching small-noise error order `M^(a/(a+alpha)) eta^(alpha/(a+alpha)) [log(M/eta)]^gamma`. The template parameters are known and the remainder obeys a global power bound. [Branch recovery proof](mdpi-preprints/CelestialIRPaper.pdf)
 
-A double Mellin example gives two different ordered residues. A two-channel retarded-time calculation gives an exact inverse noise norm on the line with real Mellin weight $1/2$. The former concerns a scalar model and the latter concerns a change of transform representation. [Ordered limits](paper/ordered-limits.tex) · [Fourier–Mellin identity](paper/framework-bridge.tex)
+A double Mellin example gives two different ordered residues. A two-channel retarded-time calculation gives an exact inverse noise norm on the line with real Mellin weight $1/2$. The former concerns a scalar model and the latter concerns a change of transform representation. [Ordered limits](mdpi-preprints/CelestialIRPaper.pdf) · [Fourier–Mellin identity](mdpi-preprints/CelestialIRPaper.pdf)
 
-For massive QED at leading order, we prove a sharp logarithmic rate for reconstructing signed angular charge data at one known speed. On the massless scalar principal series, we prove that a time translation can push arbitrarily close to the entire norm of a unit wave packet out of a fixed Mellin band. [Massive Ward kernel](paper/massive-angular.tex) · [Mellin band leakage](paper/mellin-translation.tex)
+For massive QED at leading order, we prove a sharp logarithmic rate for reconstructing signed angular charge data at one known speed. On the massless scalar principal series, we prove that a time translation can push arbitrarily close to the entire norm of a unit wave packet out of a fixed Mellin band. [Massive Ward kernel](mdpi-preprints/CelestialIRPaper.pdf) · [Mellin band leakage](mdpi-preprints/CelestialIRPaper.pdf)
 
 The [research ledger](RESEARCH-ATTEMPTS.md) records the outcomes across eight topics, including recent results from the cited researchers and remaining physical questions.
 
@@ -44,7 +34,7 @@ The full principal part is also recoverable in this model. When a degree-`m` log
 
 This is a componentwise minimax statement at fixed degree and reference convention. In a degree-two expansion, the highest pole has no additional log loss; the double pole has one; the ordinary residue has two. The paper supplies explicit interpolation weights and both bounds.
 
-[Full principal-part proof](paper/full-jet.tex) · [Written angular/logarithmic proofs](paper/angular-logs.tex) · [Research context](RESEARCH-CONTEXT.md) · [Published problem map](OPEN-PROBLEMS.md)
+[Full principal-part proof](mdpi-preprints/CelestialIRPaper.pdf) · [Written angular/logarithmic proofs](mdpi-preprints/CelestialIRPaper.pdf) · [Research context](RESEARCH-CONTEXT.md) · [Published problem map](OPEN-PROBLEMS.md)
 
 ## The foundational instability result
 
@@ -133,12 +123,7 @@ lean lean/ScaleJets.lean
 lean lean/CelestialIR.lean
 ```
 
-Build the manuscript with a TeX installation containing the standard AMS and graphics packages.
-
-```sh
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory=paper paper/manuscript.tex
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory=paper paper/manuscript.tex
-```
+The manuscript TeX source is in `mdpi-preprints/MDPICelestialIRTeX.zip` (pdflatex, compile twice).
 
 The written proofs establish the infinite statements. The scripts replay exact finite identities and high-precision controls, with their scope recorded in `reports/`. The independent standard-library Julia replay checks the full interpolation and inverse-smoothing algebra with arbitrary-precision rational arithmetic; CI preserves the generated verification records.
 
