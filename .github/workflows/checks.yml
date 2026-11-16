@@ -37,6 +37,11 @@ jobs:
           python scripts/verify_scale_jets.py
           julia --startup-file=no julia/verify_exact.jl
           julia --startup-file=no julia/verify_log_jet.jl
+          julia --startup-file=no julia/verify_finite_identities.jl
+          julia --startup-file=no julia/verify_sampling.jl
+          julia --startup-file=no julia/verify_exponent.jl
+          julia --startup-file=no julia/verify_projection.jl
+          julia --startup-file=no julia/verify_kinked_line.jl
       - uses: leanprover/lean-action@v1
         with:
           auto-config: 'false'
@@ -49,6 +54,7 @@ jobs:
         run: |
           set -o pipefail
           lean lean/ScaleJets.lean | tee reports/lean-axioms.txt
+          lean lean/CelestialIR.lean | tee reports/lean-axioms-celestial.txt
       - name: Save verification records
         uses: actions/upload-artifact@v4
         with:

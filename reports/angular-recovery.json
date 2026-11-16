@@ -1,7 +1,7 @@
 {
   "schema": "celestial-angular-recovery-v1",
-  "generated_utc": "2026-11-14T23:16:27.513714+00:00",
-  "python_version": "3.14.3",
+  "generated_utc": "2026-11-16T08:03:20.231349+00:00",
+  "python_version": "3.13.18",
   "mpmath_version": "1.3.0",
   "sympy_version": "1.14.0",
   "formal_proof": false,
