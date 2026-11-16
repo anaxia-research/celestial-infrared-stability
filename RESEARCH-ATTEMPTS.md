@@ -6,7 +6,7 @@ Bounded attempt ledger, 15 November 2026. All eight categories in [OPEN-PROBLEMS
 
 **Attempt and outcome — conditional mathematical results.** The manuscript constructs direct Gaussian recovery from noisy Mellin-line observations, a matching minimax exponent for a fixed global infrared modulus, and angular/fixed-log-degree extensions. In its notation the highest-coefficient rate is proportional to M^(a/(a+alpha)) eta^(alpha/(a+alpha)); lower Laurent coefficients incur explicit logarithmic losses in the full-jet problem. These are results for the stated observation spaces and priors, not unconditional continuation. The fixed-radius completely monotone family and boundary Sobolev family supply negative controls.
 
-**Evidence:** [stability-theorems.tex](paper/stability-theorems.tex), [angular-logs.tex](paper/angular-logs.tex), [full-jet.tex](paper/full-jet.tex), and their verification reports. Exact principal-series superpositions already exist in [Donnay–Pasterski–Puhm, §§4.1–4.5](https://arxiv.org/pdf/2005.08990). Originality of the present combination relative to inverse-problem literature remains under review.
+**Evidence:** [stability-theorems.tex](mdpi-preprints/CelestialIRPaper.pdf), [angular-logs.tex](mdpi-preprints/CelestialIRPaper.pdf), [full-jet.tex](mdpi-preprints/CelestialIRPaper.pdf), and their verification reports. Exact principal-series superpositions already exist in [Donnay–Pasterski–Puhm, §§4.1–4.5](https://arxiv.org/pdf/2005.08990). Originality of the present combination relative to inverse-problem literature remains under review.
 
 ## 2. Identify one conventional gravitational soft functional
 
@@ -16,7 +16,7 @@ Q_S[F] = -<E[F],b>/(16 pi G),
 
 where E_AB[F]=D_A D_B F - q_AB Delta F/2. For a unit normalized l-harmonic Y, ||E[Y]||²=(l-1)l(l+1)(l+2)/2. This supplies an actual dual test and exact charge-error factor for the conventional soft contribution.
 
-The constructed news is b_AB tau/[pi(u²+tau²)]. Its memory is b, Fourier news is b exp(-tau|omega|), and gravitational energy is ||b||²/(64 pi² G tau). The pulse duration can grow with fixed memory while both flux and the displaced Mellin-line norm vanish. For unknown duration under a uniform derivative bound, a pair of opposite harmonic pulses gives the same optimal exponent as the general recovery theorem. A known exact duration gives a linear noise bound with an exact constant. The source of the charge convention is [Pasterski, equation 12 and the adjacent Bondi constraint](https://arxiv.org/html/2310.04932v2); the integrations and family are worked out in [radiative-example.tex](paper/radiative-example.tex).
+The constructed news is b_AB tau/[pi(u²+tau²)]. Its memory is b, Fourier news is b exp(-tau|omega|), and gravitational energy is ||b||²/(64 pi² G tau). The pulse duration can grow with fixed memory while both flux and the displaced Mellin-line norm vanish. For unknown duration under a uniform derivative bound, a pair of opposite harmonic pulses gives the same optimal exponent as the general recovery theorem. A known exact duration gives a linear noise bound with an exact constant. The source of the charge convention is [Pasterski, equation 12 and the adjacent Bondi constraint](https://arxiv.org/html/2310.04932v2); the integrations and family are worked out in [radiative-example.tex](mdpi-preprints/CelestialIRPaper.pdf).
 
 **Not completed:** Global Einstein evolution, endpoint constraints for independently chosen data, antipodal matching, a dressed quantum state space, and the full soft-plus-hard Ward identity. Smooth finite-flux null radiative data are not a complete scattering solution.
 
@@ -43,7 +43,7 @@ Delta A_TT = -(25/8)K diag(1,-1,0),
 
 The [exact projection check](reports/ward-controls.json) reproduces this nonzero discrepancy from the published coefficients. The source's relativistic replacement in §5 remains conjectural. A failure of a full waveform ansatz does not automatically refute a symmetry-projected formula: terms annihilated by the angular Ward operator must be compared explicitly.
 
-**Next check:** The [ordered-scale criterion](QUANTUM-LOOP-CRITERION.md) proves when integrable corrections between successive virtual scales can contribute at most one logarithm. The physical kernel representation and bound must be derived from the regulated amplitude. The [massive angular inverse](paper/massive-angular.tex) quantifies recovery from the established leading kernel. The higher-log massive Ward construction and the two-loop quantum calculation remain open.
+**Next check:** The [ordered-scale criterion](QUANTUM-LOOP-CRITERION.md) proves when integrable corrections between successive virtual scales can contribute at most one logarithm. The physical kernel representation and bound must be derived from the regulated amplitude. The [massive angular inverse](mdpi-preprints/CelestialIRPaper.pdf) quantifies recovery from the established leading kernel. The higher-log massive Ward construction and the two-loop quantum calculation remain open.
 
 ## 5. Account for a finite observation time
 
@@ -51,13 +51,13 @@ The [exact projection check](reports/ward-controls.json) reproduces this nonzero
 
 ||E[F]||/(16 pi G) [sqrt(2U)epsilon + (1-(2/pi)arctan(U/tau))||b||].
 
-The second term is the exact missing memory. At fixed U it approaches the whole memory as tau grows. [radiative-example.tex](paper/radiative-example.tex)
+The second term is the exact missing memory. At fixed U it approaches the whole memory as tau grows. [radiative-example.tex](mdpi-preprints/CelestialIRPaper.pdf)
 
 **Obstruction:** This is a specified news-measurement model, not a derivation of detector strain response, quantum dressing, or a regulator prescription. The newer gravitational paper itself flags a regulated-slice problem before [equation 3.17](https://arxiv.org/html/2611.15921v1).
 
 ## 6. Make ordered soft targets well defined
 
-**Attempt and outcome — exact negative diagnostic.** The bounded stripped kernel b(x,y)=x exp(-x-y)/(x+y) has ordered soft values 0 and 1. Its double Mellin transform is Gamma(z+1)Gamma(w)/(z+w). The mixed divisor z+w=0 obstructs a common axes-only Laurent jet. Any single number approximating both ordered values has worst error at least 1/2, even for exact data. [ordered-limits.tex](paper/ordered-limits.tex)
+**Attempt and outcome — exact negative diagnostic.** The bounded stripped kernel b(x,y)=x exp(-x-y)/(x+y) has ordered soft values 0 and 1. Its double Mellin transform is Gamma(z+1)Gamma(w)/(z+w). The mixed divisor z+w=0 obstructs a common axes-only Laurent jet. Any single number approximating both ordered values has worst error at least 1/2, even for exact data. [ordered-limits.tex](mdpi-preprints/CelestialIRPaper.pdf)
 
 This scalar example illustrates a target-definition issue; it is not a scattering-amplitude counterexample. Actual source ordering issues include [Bhardwaj–Srikant, §4.2](https://arxiv.org/pdf/2403.10443) and [Magnea–Zunino, equations 99–102](https://arxiv.org/html/2512.22104v1). Choosing an order identifies one target; it does not prove OPE associativity or the appropriate physical bracket.
 
@@ -65,7 +65,7 @@ This scalar example illustrates a target-definition issue; it is not a scatterin
 
 **Attempt and outcome — exact templates and rejection controls.** The kernels exp(-lambda t) and (1+lambda t)^(-gamma), 0<gamma<1, have transforms 1/(z+lambda) and lambda^(-gamma)z^(gamma-1)exp(z/lambda)Gamma(1-gamma,z/lambda). Finite Taylor/binomial truncations have higher poles at zero; their global error does not decay exponentially in t. [resummation verification](scripts/verify_resummation.py) checks the formulas and negative controls.
 
-These illustrate the analytic structures of [Gu–Li–Wang, §§2–5](https://arxiv.org/pdf/2206.01757). For the known running-log template, [the new recovery proof](paper/branch-recovery.tex) divides a Gaussian Mellin average by the exact template response and uses a cutoff profile as the lower-bound example. It gives matching small-noise error order M^(a/(a+alpha)) eta^(alpha/(a+alpha)) [log(M/eta)]^gamma under a global power bound on the remainder. It also gives a finite-band bound and an obstruction to estimating an unknown exponent uniformly when the amplitude can approach zero. Deriving the template and a uniform remainder for a concrete quantum amplitude remains open.
+These illustrate the analytic structures of [Gu–Li–Wang, §§2–5](https://arxiv.org/pdf/2206.01757). For the known running-log template, [the new recovery proof](mdpi-preprints/CelestialIRPaper.pdf) divides a Gaussian Mellin average by the exact template response and uses a cutoff profile as the lower-bound example. It gives matching small-noise error order M^(a/(a+alpha)) eta^(alpha/(a+alpha)) [log(M/eta)]^gamma under a global power bound on the remainder. It also gives a finite-band bound and an obstruction to estimating an unknown exponent uniformly when the amplitude can approach zero. Deriving the template and a uniform remainder for a concrete quantum amplitude remains open.
 
 ## 8. Connect transform presentations without claiming a full duality
 
@@ -75,7 +75,7 @@ These illustrate the analytic structures of [Gu–Li–Wang, §§2–5](https://
 
 U_±(s)=Mellin_u C_±(s)=Gamma(s)exp(∓i pi s/2)F(1-s).
 
-On s=1/2+i nu the squared response norms sum to exactly 2 pi. The conjugate-weighted two-channel inverse therefore has sharp linear noise norm 1/sqrt(2 pi), pointwise and on joint L² frequency errors. A single channel has an exponentially bad frequency direction; compact smooth source modulations prove that it has no uniform L² inverse bound. [framework-bridge.tex](paper/framework-bridge.tex) · [verification](reports/framework-bridge.json)
+On s=1/2+i nu the squared response norms sum to exactly 2 pi. The conjugate-weighted two-channel inverse therefore has sharp linear noise norm 1/sqrt(2 pi), pointwise and on joint L² frequency errors. A single channel has an exponentially bad frequency direction; compact smooth source modulations prove that it has no uniform L² inverse bound. [framework-bridge.tex](mdpi-preprints/CelestialIRPaper.pdf) · [verification](reports/framework-bridge.json)
 
 This independently derived application of classical Fourier–Mellin identities is not a new duality. Both time channels are assumed, and Re(q)=1/2 is not automatically the physical Re(Delta)=1 convention. No boundary dynamics, OPE, bulk reconstruction, or entanglement observable follows.
 

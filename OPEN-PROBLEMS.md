@@ -14,7 +14,7 @@ Prepared and updated 15 November 2026 from the specific primary-source versions 
 
 **Established in sources:** The chapter's “Soft Charges as Currents,” equations 30–32, maps soft coefficients to specified current constructions. Donnay–Pasterski–Puhm §5.3.3 and Appendix C address contact terms and symplectic renormalization. [Pasterski chapter](https://arxiv.org/html/2310.04932v2) · [Donnay–Pasterski–Puhm](https://arxiv.org/pdf/2005.08990)
 
-**Project question:** Embed the present recovery class in a concrete physical scattering model. Specify an angular operator D, normalization, dual spin test D*epsilon, boundary/contact terms, hard contribution, phase space and Ward identity. The [Bondi example](paper/radiative-example.tex) identifies the conventional soft functional and proves the rate in a one-mode family of smooth null radiative data. Global scattering and the hard-charge balance remain open.
+**Project question:** Embed the present recovery class in a concrete physical scattering model. Specify an angular operator D, normalization, dual spin test D*epsilon, boundary/contact terms, hard contribution, phase space and Ward identity. The [Bondi example](mdpi-preprints/CelestialIRPaper.pdf) identifies the conventional soft functional and proves the rate in a one-mode family of smooth null radiative data. Global scattering and the hard-charge balance remain open.
 
 ## 3. Further subleading modes, memory and logarithmic symmetries
 
@@ -28,7 +28,7 @@ Prepared and updated 15 November 2026 from the specific primary-source versions 
 
 **Later constraint:** An October 2026 Newtonian calculation gives a three-particle counterexample to a prior full multiparticle gravitational-tail conjecture; its relativistic replacement remains conjectural. This is not automatically a refutation of a symmetry-projected tower. [2610.07134v1, §4.3, equations 4.25–4.27; §5](https://arxiv.org/html/2610.07134v1)
 
-**Project progress:** We replay the nonzero transverse-traceless discrepancy in the attempt ledger. The [leading angular inverse theorem](paper/massive-angular.tex) uses the established massive QED Ward kernel and proves the sharp logarithmic recovery rate for a signed angular density at one known speed. Two unconstrained speeds make the inverse map noninjective. The [ordered-scale criterion](QUANTUM-LOOP-CRITERION.md) states a sufficient estimate for testing the symmetry-projected two-loop coefficient. The higher-logarithmic massive Ward tower and the interacting quantum calculation remain open.
+**Project progress:** We replay the nonzero transverse-traceless discrepancy in the attempt ledger. The [leading angular inverse theorem](mdpi-preprints/CelestialIRPaper.pdf) uses the established massive QED Ward kernel and proves the sharp logarithmic recovery rate for a signed angular density at one known speed. Two unconstrained speeds make the inverse map noninjective. The [ordered-scale criterion](QUANTUM-LOOP-CRITERION.md) states a sufficient estimate for testing the symmetry-projected two-loop coefficient. The higher-logarithmic massive Ward tower and the interacting quantum calculation remain open.
 
 ## 5. Detector scales, dressing and the soft limit
 
@@ -42,13 +42,13 @@ The newer gravity construction explicitly flags a regulated-Cauchy-slice issue b
 
 **Established complications, with completion still open in the cited analyses:** Bhardwaj–Yelleshpur Srikant §4.2 studies order-dependent multiple-soft operations. Magnea–Zunino §§5–6 and §7 examine energy-fraction dependence and limitations of associativity in multi-emission limits. These results prevent assuming a universal holomorphic local algebra without specifying limits. [2403.10443, §§4.2, 6](https://arxiv.org/pdf/2403.10443) · [2512.22104v1, §§5–7, especially equations 99–102](https://arxiv.org/html/2512.22104v1)
 
-**Project progress:** An [explicit double Mellin example](paper/ordered-limits.tex) gives unequal ordered residues through a mixed polar divisor. Physical bracket input is illustrated by [Pranzetti–Salluce’s tree-level prescription](https://arxiv.org/abs/2510.26520v3). Higher-loop OPE associativity remains unresolved here.
+**Project progress:** An [explicit double Mellin example](mdpi-preprints/CelestialIRPaper.pdf) gives unequal ordered residues through a mixed polar divisor. Physical bracket input is illustrated by [Pranzetti–Salluce’s tree-level prescription](https://arxiv.org/abs/2510.26520v3). Higher-loop OPE associativity remains unresolved here.
 
 ## 7. Fixed-order multipoles versus resummed analytic structure
 
 **Established in source:** Gu–Li–Wang §§2–5 gives massless-EFT resummation examples with branch cuts and special shifted/remaining poles. It leaves broader higher-order analytic structures unresolved. [2206.01757, §5](https://arxiv.org/pdf/2206.01757)
 
-**Project progress:** The shifted-pole and incomplete-gamma scalar models in `paper/angular-logs.tex` and `scripts/verify_resummation.py` show why finite log truncations can violate the global decaying-remainder prior. They are analytic scope controls, not newly solved physical loops. For a known running-log template and a global power remainder bound, [the branch recovery theorem](paper/branch-recovery.tex) proves matching minimax rates for its fractional coefficient. Unknown resummation parameters and the derivation of a physical remainder remain open.
+**Project progress:** The shifted-pole and incomplete-gamma scalar models in `paper/angular-logs.tex` and `scripts/verify_resummation.py` show why finite log truncations can violate the global decaying-remainder prior. They are analytic scope controls, not newly solved physical loops. For a known running-log template and a global power remainder bound, [the branch recovery theorem](mdpi-preprints/CelestialIRPaper.pdf) proves matching minimax rates for its fractional coefficient. Unknown resummation parameters and the derivation of a physical remainder remain open.
 
 ## 8. Completing and connecting holographic descriptions
 
@@ -56,7 +56,7 @@ The newer gravity construction explicitly flags a regulated-Cauchy-slice issue b
 
 **Recent restricted result:** Caminiti–Pasterski relate a swing length to half a mutual information for a special state class, while stressing the ordinary RT flat-limit obstruction and a broader inner-horizon interpretation problem. This is a specific development, not a complete flat-space duality. [2611.15854v1, §1, equations 1.1–1.2; §§2.2–3](https://arxiv.org/html/2611.15854v1)
 
-**Project progress:** The [two-time-channel bridge](paper/framework-bridge.tex) gives a sharp noise norm on its specified data line. The [translation theorem](paper/mellin-translation.tex) treats the physical one-particle principal series and shows that any fixed finite band can lose arbitrarily close to the entire norm under a nonzero time translation. A dynamical boundary theory and the full bulk/boundary duality remain open.
+**Project progress:** The [two-time-channel bridge](mdpi-preprints/CelestialIRPaper.pdf) gives a sharp noise norm on its specified data line. The [translation theorem](mdpi-preprints/CelestialIRPaper.pdf) treats the physical one-particle principal series and shows that any fixed finite band can lose arbitrarily close to the entire norm under a nonzero time translation. A dynamical boundary theory and the full bulk/boundary duality remain open.
 
 ## Next reviewable target
 

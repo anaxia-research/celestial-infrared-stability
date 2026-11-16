@@ -1,7 +1,7 @@
 #!/usr/bin/env julia
 # Exact replays (Rational{BigInt}, standard library only) of the statements
 # formalized in CelestialIR.lean, over many instances, plus an exact check that
-# the full-jet weights W_{k,j} of paper/full-jet.tex reproduce beta_k.
+# the full-jet weights W_{k,j} of the paper (mdpi-preprints/CelestialIRPaper.pdf) reproduce beta_k.
 # This is a finite computational check, not a proof.
 
 using Random
@@ -248,7 +248,7 @@ for nm in ["5 T_m(x_j) = (-1)^j at exact nodes (m<=6)", "5 sign w_j = (-1)^j", "
 end
 
 # ---------------------------------------------------------------------------
-# 6. Full-jet weights W_{k,j} (paper/full-jet.tex, eq:fullweights) reproduce beta_k
+# 6. Full-jet weights W_{k,j} (the paper (mdpi-preprints/CelestialIRPaper.pdf), eq:fullweights) reproduce beta_k
 # ---------------------------------------------------------------------------
 polymul(p, r) = (res = zeros(Q, length(p) + length(r) - 1);
                  for i in eachindex(p), j in eachindex(r); res[i+j-1] += p[i] * r[j]; end; res)

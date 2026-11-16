@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Numerical and symbolic controls for known-branch Mellin recovery.
 
-The analytical theorem is in paper/branch-recovery.tex. Finite executions
+The analytical theorem is in the paper (mdpi-preprints/CelestialIRPaper.pdf). Finite executions
 support its implementation; numerical quadrature is not a formal or interval
 proof, and the prescribed template is not a general physical RG solution.
 """
