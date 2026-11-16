@@ -1,0 +1,32 @@
+ON HOLD - do not submit until Tubai decides.
+
+Preprints.org form fields
+-------------------------
+Title: Optimal Recovery of Infrared Soft Data in Celestial Mellin Space
+
+Authors (in this order):
+1. Deep Bhattacharjee (corresponding) - Formerly, EGSPL, Bhubaneswar; formerly, University of Calcutta (Heramba Chandra College), Kolkata - d.bhattacharjee@erl-forschung.de - ORCID 0000-0003-0466-750X
+2. Ushashi Bhattacharya - Formerly, National Taiwan University, Taipei - rai.bhattacharya.in@gmail.com - ORCID 0009-0002-2254-3914
+3. James Montgomery Lockwood - Independent Researcher, San Antonio, USA - spectralityworkinggroup@gmail.com
+4. Tristan Romanov - Independent Researcher, San Francisco, CA, USA - romanov360@gmail.com
+5. Ikailo John Sessford - Ikailo Inc., Whitby, Ontario, Canada - john@ikailo.com - ORCID 0009-0002-0150-4027
+6. Sanjeevan Singha Roy - Department of Physics, BIT Mesra, Ranchi, India - sanjeevan9905@gmail.com - ORCID 0000-0002-6148-1421
+
+Subject area: Physical Sciences > Mathematical Physics
+Keywords: celestial holography; soft theorems; optimal recovery
+MSC 2020: 44A15, 62C20, 81U20, 83C35
+
+Abstract (plain text):
+Soft theorems appear as poles and branch points of celestial Mellin amplitudes. We prove that no continuous rule recovers a soft residue from approximate Mellin data, even among positive completely monotone profiles, and that a uniform infrared modulus restores recovery with exact minimax rates. The rates cover finitely many noisy samples, angular data, every coefficient of a logarithmic principal part, and resummed branches of known or unknown exponent. Applications include Bondi memory, ordered soft limits, the leading massive QED charge and finite Mellin bands.
+
+Files
+-----
+CelestialIRPaper.pdf  - 43 pages
+MDPICelestialIRTeX.zip - one main.tex (\documentclass on line 1, bibliography inlined) + figures/*.png; compiles with pdflatex, 0 errors, 0 undefined references, 0 overfull boxes.
+
+Code: https://github.com/anaxia-research/celestial-infrared-stability (Lean 4 + Julia; PR #1). No release, no DOI; the paper cites the GitHub URL only.
+
+To confirm before submission
+----------------------------
+- Author contributions: the paper states that U.B. checked arguments and references and that J.M.L., T.R., I.J.S. and S.S.R. read the manuscript. These co-author roles were not confirmed by them. Edit if needed.
+- The repository's main branch still carries the earlier draft's paper/ folder (manuscript PDF and TeX). Remove it before submission if the repo should hold code only.
